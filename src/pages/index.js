@@ -1,3 +1,3 @@
 import React from "react"
-
-export default () => <div>L'envol du souffle</div>
+import Layout from "../components/layout"
+export default () => <Layout>L'envol du souffle</Layout>
