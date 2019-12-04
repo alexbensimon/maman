@@ -1,10 +1,12 @@
 import React from 'react';
 import styled from '@emotion/styled';
 import { Link } from 'gatsby';
+import image from '../assets/img/test/IMG_3953_Original.jpg';
 
 export const Header = () => {
   return (
     <Container>
+      <img src={image} height={200} alt=""></img>
       <Title>
         <Link to="/">
           <h1>L'envol du souffle</h1>
