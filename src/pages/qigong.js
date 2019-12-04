@@ -6,7 +6,7 @@ export default () => {
   return (
     <Layout>
       <Header />
-      <h1>Accueil</h1>
+      <h1>Qi Gong</h1>
     </Layout>
   );
 };
