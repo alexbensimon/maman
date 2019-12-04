@@ -11,7 +11,7 @@ export default ({ children }) => (
       styles={css`
         div {
           background: lightgrey;
-          color: black;
+          color: white;
         }
       `}
     />
