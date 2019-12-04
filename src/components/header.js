@@ -21,6 +21,9 @@ export const Header = () => {
         <Link to="/qigong/">
           <h3>Qi Gong</h3>
         </Link>
+        <Link to="/contact/">
+          <h3>Contact</h3>
+        </Link>
       </Menu>
     </Container>
   );
