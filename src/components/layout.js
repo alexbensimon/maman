@@ -6,12 +6,21 @@ import { colors } from '../utils/colors';
 export const Layout = ({ children }) => (
   <Wrapper>
     <Global
+      styles={css`
+        @import url('https://fonts.googleapis.com/css?family=Merienda&display=swap');
+      `}
+    />
+    <Global
       styles={css({
         body: {
           margin: 0,
         },
         h1: {
           margin: 0,
+        },
+        a: {
+          textDecoration: 'none',
+          color: colors.black,
         },
       })}
     />
@@ -21,5 +30,7 @@ export const Layout = ({ children }) => (
 
 const Wrapper = styled.div({
   height: '100vh',
-  backgroundColor: colors.light,
+  color: colors.black,
+  backgroundColor: colors.white,
+  fontFamily: 'Merienda, cursive',
 });

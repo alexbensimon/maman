@@ -1,18 +1,16 @@
 import React from 'react';
 import styled from '@emotion/styled';
 import { Link } from 'gatsby';
-import image from '../assets/img/test/IMG_3953_Original.jpg';
 
 export const Header = () => {
   return (
     <Container>
-      <img src={image} height={200} alt=""></img>
-      <Title>
+      <Top>
         <Link to="/">
-          <h1>L'envol du souffle</h1>
+          <Title>L'envol du souffle</Title>
         </Link>
         <h2>Marielle Tuil-Bensimon</h2>
-      </Title>
+      </Top>
       <Menu>
         <Link to="/">
           <h3>Accueil</h3>
@@ -33,9 +31,12 @@ export const Header = () => {
 
 const Container = styled.div({
   textAlign: 'center',
+  borderBottom: '1px solid',
 });
 
-const Title = styled.div({});
+const Top = styled.div({});
+
+const Title = styled.h1({});
 
 const Menu = styled.div({
   display: 'flex',
