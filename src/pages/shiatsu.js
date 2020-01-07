@@ -1,5 +1,7 @@
 import React from 'react';
 import ampukuImage from '../assets/img/ampuku.png';
+import shiatsuMainImage from '../assets/img/shiatsu-main.jpg';
+import { Underline } from '../components/commonstyles';
 import { Content } from '../components/content';
 import { Header } from '../components/header';
 import { Layout } from '../components/layout';
@@ -40,6 +42,10 @@ export default () => {
           j’utiliserai des pressions, des techniques vibratoires, des étirements
           progressifs, des réchauffements et des percussions.
         </p>
+        <img
+          src={shiatsuMainImage}
+          alt="Une main d'enfant est massée par deux mains"
+        ></img>
         <p>
           Le Shiatsu est une pratique du lâcher-prise, il permet de relâcher à
           la fois les tensions musculaires et les ressassements du mental; il
@@ -84,7 +90,15 @@ export default () => {
         <p>
           Les séances n’ont en aucun cas de prétention médicale ou paramédicale.
         </p>
-        mettre l’article bio magazine de Anais et santé magazine shiatsu cancer
+        <p>
+          <a
+            href="https://www.bioalaune.com/fr/actualite-bio/37367/shiatsu-soulager-acouphene"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Underline>Le shiatsu pour soulager les acouphènes</Underline>
+          </a>
+        </p>
       </Content>
     </Layout>
   );

@@ -1,4 +1,5 @@
 import React from 'react';
+import shiatsuEntrepriseImage from '../assets/img/shiatsu-chaise.jpg';
 import { Content } from '../components/content';
 import { Header } from '../components/header';
 import { Layout } from '../components/layout';
@@ -33,9 +34,12 @@ export default () => {
           Il se pratique habillé, le receveur est confortablement installé sur
           une chaise ergonomique qui propose un appui thoracique confortable, la
           position assise avec les genoux pliés permet également de bien
-          positionner le dos dans une détente immédiate; (prendre une photo
-          internet).
+          positionner le dos dans une détente immédiate.
         </p>
+        <img
+          src={shiatsuEntrepriseImage}
+          alt="Une femme a les mains posées sur le dos d'un homme assis sur une chaise"
+        ></img>
         <p>
           J’exercerai des pressions rythmées à l’aide de mes pouces, doigts,
           paumes de mains, avant-bras et coudes sur les points d’acupuncture,
@@ -45,6 +49,9 @@ export default () => {
           relaxer et de dynamiser le salarié, ce qui lui permettra de reprendre
           son travail efficacement.
         </p>
+        <h2>
+          “Beaucoup pensent à vivre longtemps, peu à bien vivre” — Socrate
+        </h2>
       </Content>
     </Layout>
   );

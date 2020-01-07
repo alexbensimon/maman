@@ -7,13 +7,14 @@ export const Layout = ({ children }) => (
     <Global
       styles={css`
         @import url('https://fonts.googleapis.com/css?family=Merienda&display=swap');
+        @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
         body {
           margin: 0px;
           height: 100vh;
           color: ${colors.black};
           background-color: ${colors.white};
-          font-family: 'Merienda', cursive;
           h1 {
+            font-family: 'Merienda', cursive;
             font-size: 40px;
             line-height: 48px;
             @media (max-width: 500px) {
@@ -21,11 +22,17 @@ export const Layout = ({ children }) => (
               line-height: 40px;
             }
           }
+          h2,
+          h3 {
+            font-family: 'Merienda', cursive;
+          }
           a {
+            font-family: 'Merienda', cursive;
             text-decoration: none;
             color: ${colors.black};
           }
           p {
+            font-family: 'Roboto', sans-serif;
             font-size: 21px;
             line-height: 33px;
             @media (max-width: 500px) {

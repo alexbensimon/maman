@@ -9,8 +9,11 @@ export default () => {
     <Layout>
       <Header />
       <Content>
-        <h1>Accueil</h1>
-        <img src={oieImage} alt="Une oie qui court sur l'eau"></img>
+        <h1>Mon histoire</h1>
+        <h2>
+          “A force de sacrifier l’essentiel pour l’urgence, on finit par oublier
+          l’urgence de l’essentiel” — Edgar Morin
+        </h2>
         <p>
           Dans mon parcours, rien ne me destinait à embrasser l’exercice de
           praticienne en Shiatsu. Juriste de formation, j’ai évolué dans le
@@ -62,6 +65,7 @@ export default () => {
           se réalise sur les autres et représente un extraordinaire moyen de
           contact et de communication avec autrui.
         </p>
+        <img src={oieImage} alt="Une oie qui court sur l'eau"></img>
         <h2>Formations</h2>
         <p>
           Certifiée praticienne en Shiatsu traditionnel de l’école ZEN PLUS de

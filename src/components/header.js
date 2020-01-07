@@ -14,7 +14,7 @@ export const Header = () => {
       </div>
       <Menu>
         <Link to="/">
-          <h3>Accueil</h3>
+          <h3>Mon histoire</h3>
         </Link>
         <Link to="/shiatsu">
           <h3>Shiatsu</h3>

@@ -1,4 +1,5 @@
 import React from 'react';
+import { Underline } from '../components/commonstyles';
 import { Content } from '../components/content';
 import { Header } from '../components/header';
 import { Layout } from '../components/layout';
@@ -19,6 +20,17 @@ export default () => {
           souffle); s’offrir un moment de ressourcement pour prendre soin de soi
           et acquérir des méthodes simples et efficaces de préservation de la
           santé et du bien-être.
+        </p>
+        <p>
+          <a
+            href="https://www.lemonde.fr/sante/article/2016/08/31/l-hopital-experimente-le-qi-gong-pour-soulager-des-effets-secondaires-du-cancer_4990653_1651302.html"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Underline>
+              Le Qi Gong pour soulager les effets secondaires du cancer
+            </Underline>
+          </a>
         </p>
       </Content>
     </Layout>

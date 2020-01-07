@@ -13,9 +13,8 @@ export default () => {
         <p>
           <UnderlineBold>Sur rendez-vous</UnderlineBold> : 06 23 14 88 96
         </p>
-        <p>
-          <Underline>Tarifs</Underline> : Durée de la séance : 1 heure 30
-        </p>
+        <h2>Tarifs</h2>
+        <p>Durée de la séance : 1 heure 30</p>
         <p>En cabinet 1 séance : 60 euros - 3 séances : 150 euros</p>
         <p>A domicile : 1 séance : 70 euros</p>
         <p>En entreprise : 70 euros de l’heure</p>
@@ -24,10 +23,6 @@ export default () => {
     </Layout>
   );
 };
-
-const Underline = styled.span`
-  text-decoration: underline;
-`;
 
 const UnderlineBold = styled.span`
   text-decoration: underline;
