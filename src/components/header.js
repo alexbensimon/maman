@@ -9,19 +9,23 @@ export const Header = () => {
         <Link to="/">
           <h1>L'envol du souffle</h1>
         </Link>
+        <h2>Entretenez votre énergie, votre équilibre et votre sérénité</h2>
         <h2>Marielle Tuil-Bensimon</h2>
       </div>
       <Menu>
         <Link to="/">
           <h3>Accueil</h3>
         </Link>
-        <Link to="/shiatsu/">
+        <Link to="/shiatsu">
           <h3>Shiatsu</h3>
         </Link>
-        <Link to="/qigong/">
-          <h3>Qi Gong</h3>
+        <Link to="/entreprise">
+          <h3>En entreprise</h3>
         </Link>
-        <Link to="/infos/">
+        <Link to="/ateliers">
+          <h3>Ateliers</h3>
+        </Link>
+        <Link to="/infos">
           <h3>Infos pratiques</h3>
         </Link>
       </Menu>
@@ -37,7 +41,7 @@ const Container = styled.div`
 const Menu = styled.div`
   display: flex;
   justify-content: space-evenly;
-  @media (max-width: 500px) {
+  @media (max-width: 580px) {
     flex-direction: column;
   }
 `;

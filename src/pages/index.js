@@ -1,5 +1,5 @@
 import React from 'react';
-import image from '../assets/img/oie-court-eau.jpg';
+import oieImage from '../assets/img/oie-court-eau.jpg';
 import { Content } from '../components/content';
 import { Header } from '../components/header';
 import { Layout } from '../components/layout';
@@ -10,7 +10,7 @@ export default () => {
       <Header />
       <Content>
         <h1>Accueil</h1>
-        <img src={image} alt="Une oie qui court sur l'eau"></img>
+        <img src={oieImage} alt="Une oie qui court sur l'eau"></img>
         <p>
           Dans mon parcours, rien ne me destinait à embrasser l’exercice de
           praticienne en Shiatsu. Juriste de formation, j’ai évolué dans le
@@ -33,14 +33,20 @@ export default () => {
           conscience que c’est d’abord la détente physique qui permet
           l’apaisement du mental. Ces disciplines ont été des aides précieuses :
           j’ai atteint un état de paix intérieure et de quiétude et j’ai
-          retrouvé confiance en moi. Le Qi Gong et le Do In sont des techniques
-          de revitalisation qui associent des mouvements corporels souples et
-          lents issus de la culture traditionnelle chinoise le long des points
-          d’acupuncture, une respiration consciente profonde et une
-          concentration dans l’instant présent. Ces pratiques permettent de
-          stimuler en nous la circulation de l’énergie vitale et de détendre le
-          corps. Ce rééquilibrage des énergies procure détente et bien-être et
-          harmonise aussi bien le corps que l’esprit.
+          retrouvé confiance en moi.
+        </p>
+        <p>
+          Le Qi Gong et le Do In sont des techniques de revitalisation qui
+          associent des mouvements corporels souples et lents issus de la
+          culture traditionnelle chinoise le long des points d’acupuncture, une
+          respiration consciente profonde et une concentration dans l’instant
+          présent.
+        </p>
+        <p>
+          Ces pratiques permettent de stimuler en nous la circulation de
+          l’énergie vitale et de détendre le corps. Ce rééquilibrage des
+          énergies procure détente et bien-être et harmonise aussi bien le corps
+          que l’esprit.
         </p>
         <p>
           Ces épreuves ont rebattu les cartes et m’ont donné envie d’une part,
@@ -55,6 +61,26 @@ export default () => {
           revitalisation qui se pratique par soi-même sur soi-même; le Shiatsu
           se réalise sur les autres et représente un extraordinaire moyen de
           contact et de communication avec autrui.
+        </p>
+        <h2>Formations</h2>
+        <p>
+          Certifiée praticienne en Shiatsu traditionnel de l’école ZEN PLUS de
+          Gilles Valentin.
+          <br />
+          Stage d’été Shiatsu assis avec Bernard BOUHERET.
+          <br />
+          Certifiée formation professionnelle de Qi Gong de l’institut QUIMETAO,
+          Dr Jian Liujun.
+          <br />
+          Stages et cours hebdomadaires avec Véronique Viloing, enseignante Qi
+          Gong de la verticalité, médecine traditionnelle chinoise et
+          méditation.
+          <br /> Stage méditation MBSR avec Véronique Viloing (1er cycle).
+          <br /> Ecole ZHI ROU JIA, “l’école du développement de la douceur” (en
+          3ème et dernière année).
+          <br /> Certificat de qualification professionnelle (CQP), Fédération
+          Sport Pour Tous (formation en cours) Ana PEROCCO, tutrice dans le
+          cadre du CQP et enseignante Qi Gong et Do In.
         </p>
       </Content>
     </Layout>

@@ -1,4 +1,5 @@
 import React from 'react';
+import ampukuImage from '../assets/img/ampuku.png';
 import { Content } from '../components/content';
 import { Header } from '../components/header';
 import { Layout } from '../components/layout';
@@ -9,7 +10,7 @@ export default () => {
       <Header />
       <Content>
         <h1>Shiatsu</h1>
-        <p>En japonais, Shiatsu signifie “pression avec les doigts”</p>
+        <p>En japonais, Shiatsu signifie “pression avec les doigts”.</p>
         <p>
           Le Shiatsu est une pratique manuelle énergétique japonaise qui prend
           ses racines dans la médecine traditionnelle chinoise. Cet art du
@@ -64,7 +65,26 @@ export default () => {
           le lieu de nos émotions enfouies dont certaines sont cristallisées
           depuis longtemps provoquant des désagréments physiques.
         </p>
-        Mettre dessin chinois sur l’Ampuku
+        <img
+          src={ampukuImage}
+          alt="Un homme assis a la main posée sur un homme allongé"
+        ></img>
+        <p>
+          Mes pratiques du Qi Gong et du Do In depuis cinq ans, mise en éveil du
+          corps me permettent d’entretenir ma forme physique et psychique afin
+          de bien me préparer avant de donner une séance de Shiatsu; grâce à ces
+          exercices de respiration profonde, mon corps se détend et le flots de
+          mes pensées diminue permettant une meilleure concentration avec une
+          présence ici et maintenant et un calme intérieur, atouts qui
+          enrichissent ma pratique du Shiatsu; un travail centré sur l’attention
+          et l’intention bienveillante permet d’équilibrer les énergies dans le
+          corps et d’aider la personne qui reçoit le Shiatsu à entreprendre le
+          retour vers elle-même afin qu’elle trouve ses propres solutions.
+        </p>
+        <p>
+          Les séances n’ont en aucun cas de prétention médicale ou paramédicale.
+        </p>
+        mettre l’article bio magazine de Anais et santé magazine shiatsu cancer
       </Content>
     </Layout>
   );
