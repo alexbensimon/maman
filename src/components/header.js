@@ -1,16 +1,16 @@
-import React from 'react';
 import styled from '@emotion/styled';
 import { Link } from 'gatsby';
+import React from 'react';
 
 export const Header = () => {
   return (
     <Container>
-      <Top>
+      <div>
         <Link to="/">
-          <Title>L'envol du souffle</Title>
+          <h1>L'envol du souffle</h1>
         </Link>
         <h2>Marielle Tuil-Bensimon</h2>
-      </Top>
+      </div>
       <Menu>
         <Link to="/">
           <h3>Accueil</h3>
@@ -21,24 +21,23 @@ export const Header = () => {
         <Link to="/qigong/">
           <h3>Qi Gong</h3>
         </Link>
-        <Link to="/contact/">
-          <h3>Contact</h3>
+        <Link to="/infos/">
+          <h3>Infos pratiques</h3>
         </Link>
       </Menu>
     </Container>
   );
 };
 
-const Container = styled.div({
-  textAlign: 'center',
-  borderBottom: '1px solid',
-});
+const Container = styled.div`
+  text-align: center;
+  border-bottom: 1px solid;
+`;
 
-const Top = styled.div({});
-
-const Title = styled.h1({});
-
-const Menu = styled.div({
-  display: 'flex',
-  justifyContent: 'space-evenly',
-});
+const Menu = styled.div`
+  display: flex;
+  justify-content: space-evenly;
+  @media (max-width: 500px) {
+    flex-direction: column;
+  }
+`;
