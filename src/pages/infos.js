@@ -14,11 +14,17 @@ export default () => {
           <UnderlineBold>Sur rendez-vous</UnderlineBold> : 06 23 14 88 96
         </p>
         <h2>Tarifs</h2>
-        <p>Durée de la séance : 1 heure 30</p>
-        <p>En cabinet 1 séance : 60 euros - 3 séances : 150 euros</p>
-        <p>A domicile : 1 séance : 70 euros</p>
-        <p>En entreprise : 70 euros de l’heure</p>
-        <p>Pas de TVA, statut de micro-entreprise</p>
+        <p>Durée de la séance : ~ 1 heure</p>
+        <span>En cabinet</span>
+        <List>
+          <li>1 séance : 60 €</li>
+          <li>3 séances : 150 €</li>
+        </List>
+        <p>A domicile - 1 séance : 70 €</p>
+        <p>Enfant : 30 min - 35 € (en cabinet)</p>
+        <p>
+          <b>En entreprise</b> : 70 € de l’heure
+        </p>
       </Content>
     </Layout>
   );
@@ -27,4 +33,8 @@ export default () => {
 const UnderlineBold = styled.span`
   text-decoration: underline;
   font-weight: bold;
+`;
+
+const List = styled.ul`
+  margin-top: 0;
 `;

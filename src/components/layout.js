@@ -13,6 +13,13 @@ export const Layout = ({ children }) => (
           height: 100vh;
           color: ${colors.black};
           background-color: ${colors.white};
+          font-family: 'Roboto', sans-serif;
+          font-size: 21px;
+          line-height: 33px;
+          @media (max-width: 500px) {
+            font-size: 18px;
+            line-height: 28px;
+          }
           h1 {
             font-family: 'Merienda', cursive;
             font-size: 40px;
@@ -30,15 +37,6 @@ export const Layout = ({ children }) => (
             font-family: 'Merienda', cursive;
             text-decoration: none;
             color: ${colors.black};
-          }
-          p {
-            font-family: 'Roboto', sans-serif;
-            font-size: 21px;
-            line-height: 33px;
-            @media (max-width: 500px) {
-              font-size: 18px;
-              line-height: 28px;
-            }
           }
           img {
             width: 100%;

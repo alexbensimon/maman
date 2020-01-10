@@ -12,6 +12,10 @@ export default () => {
       <Header />
       <Content>
         <h1>Shiatsu</h1>
+        <h2>
+          “L’âme du Shiatsu est semblable à l’affection maternelle; la pression
+          des mains fait jaillir la vie” — Tokujiro Namikoshi
+        </h2>
         <p>En japonais, Shiatsu signifie “pression avec les doigts”.</p>
         <p>
           Le Shiatsu est une pratique manuelle énergétique japonaise qui prend
@@ -97,6 +101,17 @@ export default () => {
             rel="noopener noreferrer"
           >
             <Underline>Le shiatsu pour soulager les acouphènes</Underline>
+          </a>
+        </p>
+        <p>
+          <a
+            href="http://www.leparisien.fr/seine-saint-denis-93/montreuil-le-shiatsu-au-chevet-des-malades-du-cancer-28-03-2019-8041485.php"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Underline>
+              Le shiatsu contre les effets secondaires du cancer
+            </Underline>
           </a>
         </p>
       </Content>
