@@ -27,22 +27,21 @@ export default () => {
           l’urgence de l’essentiel” — Edgar Morin
         </h2>
         <p>
-          Dans mon parcours, rien ne me destinait à embrasser l’exercice de
-          praticienne en Shiatsu traditionnel. Juriste de formation, j’ai évolué
-          dans le milieu juridique durant 26 ans dont près de 20 ans en statut
-          libéral. Le stress faisait partie de mon quotidien nourrit par
-          l’exigence de l’immédiateté et l’urgence de chaque instant. Il y a
-          huit ans j’ai été touchée par un cancer du sein, après avoir suivi un
-          traitement de chimiothérapie et de radiothérapie, des effets
-          secondaires difficiles à gérer sont apparus petit à petit; je me
-          sentais chuter, j’avais perdu ma joie de vivre et je ne me
-          reconnaissais plus; Sur les conseils d’une amie, j’ai rencontré les
-          pratiques de Qi Gong et de Do In (automassages ou auto-shiatsu) qui
-          m’ont permis rapidement de retrouver un second souffle et mon énergie
-          vitale. Plusieurs effets secondaires ont disparus. Je me suis
-          réconciliée avec mon corps et cela a boosté ma combativité face à la
-          maladie. Ces pratiques m’ont offert des résultats immédiats et
-          durables.
+          Dans mon parcours, rien ne me destinait à pratiquer le Shiatsu
+          traditionnel. Juriste de formation, j’ai évolué dans le milieu
+          juridique durant 26 ans dont près de 20 ans en statut libéral. Le
+          stress faisait partie de mon quotidien nourrit par l’exigence de
+          l’immédiateté et l’urgence de chaque instant. Il y a huit ans j’ai été
+          touchée par un cancer du sein, après avoir suivi un traitement de
+          chimiothérapie et de radiothérapie, des effets secondaires difficiles
+          à gérer sont apparus petit à petit; je me sentais chuter, j’avais
+          perdu ma joie de vivre et je ne me reconnaissais plus; Sur les
+          conseils d’une amie, j’ai rencontré les pratiques de Qi Gong et de Do
+          In (automassages ou auto-shiatsu) qui m’ont permis rapidement de
+          retrouver un second souffle et mon énergie vitale. Plusieurs effets
+          secondaires ont disparus. Je me suis réconciliée avec mon corps et
+          cela a boosté ma combativité face à la maladie. Ces pratiques m’ont
+          offert des résultats immédiats et durables.
         </p>
         <p>
           Pratiquer au quotidien le Qi Gong et le Do in m’ont permis de prendre
