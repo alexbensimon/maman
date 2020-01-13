@@ -1,6 +1,8 @@
 import React from 'react';
+import Helmet from 'react-helmet';
 import ampukuImage from '../assets/img/ampuku.png';
 import shiatsuMainImage from '../assets/img/shiatsu-main.jpg';
+import { BaseHead } from '../components/basehead';
 import { Underline } from '../components/commonstyles';
 import { Content } from '../components/content';
 import { Header } from '../components/header';
@@ -9,6 +11,16 @@ import { Layout } from '../components/layout';
 export default () => {
   return (
     <Layout>
+      <BaseHead />
+      <Helmet>
+        <title>
+          Shiatsu | Marielle Tuil-Bensimon - Practicienne de Shiatsu
+        </title>
+        <meta
+          name="description"
+          content="Le Shiatsu est une pratique manuelle énergétique japonaise qui prend ses racines dans la médecine traditionnelle chinoise."
+        />
+      </Helmet>
       <Header />
       <Content>
         <h1>Shiatsu</h1>

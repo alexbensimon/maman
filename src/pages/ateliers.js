@@ -1,5 +1,7 @@
 import React from 'react';
+import Helmet from 'react-helmet';
 import postureOiseauImage from '../assets/img/posture-oiseau.jpg';
+import { BaseHead } from '../components/basehead';
 import { Underline } from '../components/commonstyles';
 import { Content } from '../components/content';
 import { Header } from '../components/header';
@@ -8,6 +10,16 @@ import { Layout } from '../components/layout';
 export default () => {
   return (
     <Layout>
+      <BaseHead />
+      <Helmet>
+        <title>
+          Ateliers | Marielle Tuil-Bensimon - Practicienne de Shiatsu
+        </title>
+        <meta
+          name="description"
+          content="S’offrir un moment de ressourcement pour prendre soin de soi et acquérir des méthodes simples et efficaces de préservation de la santé et du bien-être."
+        />
+      </Helmet>
       <Header />
       <Content>
         <h1>Ateliers</h1>
