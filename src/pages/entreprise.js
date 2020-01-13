@@ -1,5 +1,7 @@
 import React from 'react';
+import Helmet from 'react-helmet';
 import shiatsuEntrepriseImage from '../assets/img/shiatsu-chaise.jpg';
+import { BaseHead } from '../components/basehead';
 import { Content } from '../components/content';
 import { Header } from '../components/header';
 import { Layout } from '../components/layout';
@@ -7,6 +9,17 @@ import { Layout } from '../components/layout';
 export default () => {
   return (
     <Layout>
+      <BaseHead />
+      <Helmet>
+        <title>
+          Shiatsu en entreprise | Marielle Tuil-Bensimon - Practicienne de
+          Shiatsu
+        </title>
+        <meta
+          name="description"
+          content="Les effets seront à la fois de relaxer et de dynamiser le salarié, ce qui lui permettra de reprendre son travail efficacement."
+        />
+      </Helmet>
       <Header />
       <Content>
         <h1>En entreprise</h1>

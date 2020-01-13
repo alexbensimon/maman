@@ -1,5 +1,7 @@
 import React from 'react';
+import Helmet from 'react-helmet';
 import oieImage from '../assets/img/oie-court-eau.jpg';
+import { BaseHead } from '../components/basehead';
 import { Content } from '../components/content';
 import { Header } from '../components/header';
 import { Layout } from '../components/layout';
@@ -7,6 +9,16 @@ import { Layout } from '../components/layout';
 export default () => {
   return (
     <Layout>
+      <BaseHead />
+      <Helmet>
+        <title>
+          Présentation | Marielle Tuil-Bensimon - Practicienne de Shiatsu
+        </title>
+        <meta
+          name="description"
+          content="Comment mon parcours juridique et les épreuves de la vie m'ont amené à pratiquer le Qi Gong, le Do in et le Shiatsu."
+        />
+      </Helmet>
       <Header />
       <Content>
         <h1>Présentation</h1>

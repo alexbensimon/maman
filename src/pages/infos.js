@@ -1,5 +1,7 @@
 import styled from '@emotion/styled';
 import React from 'react';
+import Helmet from 'react-helmet';
+import { BaseHead } from '../components/basehead';
 import { Content } from '../components/content';
 import { Header } from '../components/header';
 import { Layout } from '../components/layout';
@@ -7,6 +9,16 @@ import { Layout } from '../components/layout';
 export default () => {
   return (
     <Layout>
+      <BaseHead />
+      <Helmet>
+        <title>
+          Infos pratiques | Marielle Tuil-Bensimon - Practicienne de Shiatsu
+        </title>
+        <meta
+          name="description"
+          content="Contact, durée, prix et formules des séances de Shiatsu en cabinet, à domicile et en entreprise."
+        />
+      </Helmet>
       <Header />
       <Content>
         <h1>Infos pratiques</h1>
