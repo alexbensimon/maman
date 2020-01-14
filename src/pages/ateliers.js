@@ -1,13 +1,14 @@
+import { graphql } from 'gatsby';
+import Img from 'gatsby-image';
 import React from 'react';
 import Helmet from 'react-helmet';
-import postureOiseauImage from '../assets/img/posture-oiseau.jpg';
 import { BaseHead } from '../components/basehead';
 import { Underline } from '../components/commonstyles';
 import { Content } from '../components/content';
 import { Header } from '../components/header';
 import { Layout } from '../components/layout';
 
-export default () => {
+export default ({ data }) => {
   return (
     <Layout>
       <BaseHead />
@@ -23,7 +24,10 @@ export default () => {
       <Header />
       <Content>
         <h1>Ateliers</h1>
-        <img src={postureOiseauImage} alt="Un oiseau"></img>
+        <Img
+          fluid={data.file.childImageSharp.fluid}
+          alt="Un oiseau qui se tient droit"
+        />
         <h2>Do In et Qi Gong : Un esprit calme dans un corps détendu</h2>
         <p>
           Place aux techniques énergétiques avec un atelier par mois afin de
@@ -51,3 +55,15 @@ export default () => {
     </Layout>
   );
 };
+
+export const query = graphql`
+  {
+    file(relativePath: { eq: "posture-oiseau.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 680) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+  }
+`;
