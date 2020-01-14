@@ -5,7 +5,7 @@ import Helmet from 'react-helmet';
 import { BaseHead } from '../components/basehead';
 import { Underline } from '../components/commonstyles';
 import { Content } from '../components/content';
-import { Header } from '../components/header';
+import { Header } from '../components/header/header';
 import { Layout } from '../components/layout';
 
 export default ({ data }) => {

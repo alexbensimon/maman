@@ -16,7 +16,7 @@ export const Layout = ({ children }) => (
           font-family: 'Roboto', sans-serif;
           font-size: 21px;
           line-height: 33px;
-          @media (max-width: 500px) {
+          @media (max-width: 600px) {
             font-size: 18px;
             line-height: 28px;
           }
@@ -24,14 +24,20 @@ export const Layout = ({ children }) => (
             font-family: 'Merienda', cursive;
             font-size: 40px;
             line-height: 48px;
-            @media (max-width: 500px) {
+            @media (max-width: 600px) {
               font-size: 30px;
               line-height: 40px;
             }
           }
-          h2,
+          h2 {
+            font-family: 'Merienda', cursive;
+          }
           h3 {
             font-family: 'Merienda', cursive;
+            @media (max-width: 850px) {
+              font-size: 20px;
+              line-height: 25px;
+            }
           }
           a {
             font-family: 'Merienda', cursive;
