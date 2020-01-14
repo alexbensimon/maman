@@ -1,14 +1,14 @@
+import { graphql } from 'gatsby';
+import Img from 'gatsby-image';
 import React from 'react';
 import Helmet from 'react-helmet';
-import ampukuImage from '../assets/img/ampuku.png';
-import shiatsuMainImage from '../assets/img/shiatsu-main.jpg';
 import { BaseHead } from '../components/basehead';
 import { Underline } from '../components/commonstyles';
 import { Content } from '../components/content';
 import { Header } from '../components/header';
 import { Layout } from '../components/layout';
 
-export default () => {
+export default ({ data }) => {
   return (
     <Layout>
       <BaseHead />
@@ -58,10 +58,10 @@ export default () => {
           j’utiliserai des pressions, des techniques vibratoires, des étirements
           progressifs, des réchauffements et des percussions.
         </p>
-        <img
-          src={shiatsuMainImage}
+        <Img
+          fluid={data.shiatsuMain.childImageSharp.fluid}
           alt="Une main d'enfant est massée par deux mains"
-        ></img>
+        />
         <p>
           Le Shiatsu est une pratique du lâcher-prise, il permet de relâcher à
           la fois les tensions musculaires et les ressassements du mental; il
@@ -87,10 +87,10 @@ export default () => {
           le lieu de nos émotions enfouies dont certaines sont cristallisées
           depuis longtemps provoquant des désagréments physiques.
         </p>
-        <img
-          src={ampukuImage}
+        <Img
+          fluid={data.ampuku.childImageSharp.fluid}
           alt="Un homme assis a la main posée sur un homme allongé"
-        ></img>
+        />
         <p>
           Mes pratiques du Qi Gong et du Do In depuis cinq ans, mise en éveil du
           corps me permettent d’entretenir ma forme physique et psychique afin
@@ -130,3 +130,22 @@ export default () => {
     </Layout>
   );
 };
+
+export const query = graphql`
+  {
+    shiatsuMain: file(relativePath: { eq: "shiatsu-main.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 680) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    ampuku: file(relativePath: { eq: "ampuku.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 680) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+  }
+`;

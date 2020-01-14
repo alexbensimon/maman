@@ -1,12 +1,13 @@
+import { graphql } from 'gatsby';
+import Img from 'gatsby-image';
 import React from 'react';
 import Helmet from 'react-helmet';
-import oieImage from '../assets/img/oie-court-eau.jpg';
 import { BaseHead } from '../components/basehead';
 import { Content } from '../components/content';
 import { Header } from '../components/header';
 import { Layout } from '../components/layout';
 
-export default () => {
+export default ({ data }) => {
   return (
     <Layout>
       <BaseHead />
@@ -77,7 +78,10 @@ export default () => {
           se réalise sur les autres et représente un extraordinaire moyen de
           contact et de communication avec autrui.
         </p>
-        <img src={oieImage} alt="Une oie qui court sur l'eau"></img>
+        <Img
+          fluid={data.file.childImageSharp.fluid}
+          alt="Une oie qui court sur l'eau"
+        />
         <h2>Formations</h2>
         <p>
           Certifiée praticienne en Shiatsu traditionnel de l’école ZEN PLUS de
@@ -102,3 +106,15 @@ export default () => {
     </Layout>
   );
 };
+
+export const query = graphql`
+  {
+    file(relativePath: { eq: "oie-court-eau.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 680) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+  }
+`;

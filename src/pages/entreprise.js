@@ -1,12 +1,13 @@
+import { graphql } from 'gatsby';
+import Img from 'gatsby-image';
 import React from 'react';
 import Helmet from 'react-helmet';
-import shiatsuEntrepriseImage from '../assets/img/shiatsu-chaise.jpg';
 import { BaseHead } from '../components/basehead';
 import { Content } from '../components/content';
 import { Header } from '../components/header';
 import { Layout } from '../components/layout';
 
-export default () => {
+export default ({ data }) => {
   return (
     <Layout>
       <BaseHead />
@@ -49,10 +50,10 @@ export default () => {
           position assise avec les genoux pliés permet également de bien
           positionner le dos dans une détente immédiate.
         </p>
-        <img
-          src={shiatsuEntrepriseImage}
+        <Img
+          fluid={data.file.childImageSharp.fluid}
           alt="Une femme a les mains posées sur le dos d'un homme assis sur une chaise"
-        ></img>
+        />
         <p>
           J’exercerai des pressions rythmées à l’aide de mes pouces, doigts,
           paumes de mains, avant-bras et coudes sur les points d’acupuncture,
@@ -69,3 +70,15 @@ export default () => {
     </Layout>
   );
 };
+
+export const query = graphql`
+  {
+    file(relativePath: { eq: "shiatsu-chaise.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 680) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+  }
+`;
