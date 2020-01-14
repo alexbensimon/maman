@@ -6,13 +6,11 @@ import { Menu } from './menu';
 export const Header = () => {
   return (
     <Container>
-      <div>
-        <Link to="/">
-          <h1>L'envol du souffle</h1>
-        </Link>
-        <h2>Entretenez votre énergie, votre équilibre et votre sérénité</h2>
-        <h2>Marielle Tuil-Bensimon - Practicienne de Shiatsu</h2>
-      </div>
+      <Link to="/">
+        <h1>L'envol du souffle</h1>
+      </Link>
+      <h2>Entretenez votre énergie, votre équilibre et votre sérénité</h2>
+      <h2>Marielle Tuil-Bensimon - Practicienne de Shiatsu</h2>
       <Menu />
     </Container>
   );
