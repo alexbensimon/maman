@@ -2,8 +2,8 @@ import { graphql } from 'gatsby';
 import Img from 'gatsby-image';
 import React from 'react';
 import Helmet from 'react-helmet';
+import { Article } from '../components/article';
 import { BaseHead } from '../components/basehead';
-import { Underline } from '../components/commonstyles';
 import { Content } from '../components/content';
 import { Header } from '../components/header/header';
 import { Layout } from '../components/layout';
@@ -106,26 +106,14 @@ export default ({ data }) => {
         <p>
           Les séances n’ont en aucun cas de prétention médicale ou paramédicale.
         </p>
-        <p>
-          <a
-            href="https://www.bioalaune.com/fr/actualite-bio/37367/shiatsu-soulager-acouphene"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Underline>Le shiatsu pour soulager les acouphènes</Underline>
-          </a>
-        </p>
-        <p>
-          <a
-            href="http://www.leparisien.fr/seine-saint-denis-93/montreuil-le-shiatsu-au-chevet-des-malades-du-cancer-28-03-2019-8041485.php"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Underline>
-              Le shiatsu contre les effets secondaires du cancer
-            </Underline>
-          </a>
-        </p>
+        <Article
+          url="https://www.bioalaune.com/fr/actualite-bio/37367/shiatsu-soulager-acouphene"
+          title="Le shiatsu pour soulager les acouphènes"
+        />
+        <Article
+          url="http://www.leparisien.fr/seine-saint-denis-93/montreuil-le-shiatsu-au-chevet-des-malades-du-cancer-28-03-2019-8041485.php"
+          title="Le shiatsu contre les effets secondaires du cancer"
+        />
       </Content>
     </Layout>
   );

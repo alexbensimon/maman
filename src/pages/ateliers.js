@@ -2,8 +2,8 @@ import { graphql } from 'gatsby';
 import Img from 'gatsby-image';
 import React from 'react';
 import Helmet from 'react-helmet';
+import { Article } from '../components/article';
 import { BaseHead } from '../components/basehead';
-import { Underline } from '../components/commonstyles';
 import { Content } from '../components/content';
 import { Header } from '../components/header/header';
 import { Layout } from '../components/layout';
@@ -41,17 +41,10 @@ export default ({ data }) => {
           santé et du bien-être.
         </p>
         <h2>“Le repos est le maître du mouvement” — Lao Tseu</h2>
-        <p>
-          <a
-            href="https://www.lemonde.fr/sante/article/2016/08/31/l-hopital-experimente-le-qi-gong-pour-soulager-des-effets-secondaires-du-cancer_4990653_1651302.html"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Underline>
-              Le Qi Gong pour soulager les effets secondaires du cancer
-            </Underline>
-          </a>
-        </p>
+        <Article
+          url="https://www.lemonde.fr/sante/article/2016/08/31/l-hopital-experimente-le-qi-gong-pour-soulager-des-effets-secondaires-du-cancer_4990653_1651302.html"
+          title="Le Qi Gong pour soulager les effets secondaires du cancer"
+        />
       </Content>
     </Layout>
   );

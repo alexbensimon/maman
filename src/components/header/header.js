@@ -9,8 +9,8 @@ export const Header = () => {
       <Link to="/">
         <h1>L'envol du souffle</h1>
       </Link>
-      <h2>Entretenez votre énergie, votre équilibre et votre sérénité</h2>
       <h2>Marielle Tuil-Bensimon - Praticienne en Shiatsu traditionnel</h2>
+      <h3>Entretenez votre énergie, votre équilibre et votre sérénité</h3>
       <Menu />
     </Container>
   );
