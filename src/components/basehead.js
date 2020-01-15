@@ -7,7 +7,7 @@ export const BaseHead = () => (
     <title>L'envol du souffle | Marielle Tuil-Bensimon</title>
     <meta
       name="description"
-      content="Présentation, ateliers et informations de Marielle Tuil-Bensimon - Practicienne de Shiatsu"
+      content="Présentation, ateliers et informations de Marielle Tuil-Bensimon - Praticienne en Shiatsu traditionnel"
     />
   </Helmet>
 );

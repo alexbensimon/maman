@@ -14,7 +14,7 @@ export default ({ data }) => {
       <BaseHead />
       <Helmet>
         <title>
-          Shiatsu | Marielle Tuil-Bensimon - Practicienne de Shiatsu
+          Shiatsu | Marielle Tuil-Bensimon - Praticienne en Shiatsu traditionnel
         </title>
         <meta
           name="description"
