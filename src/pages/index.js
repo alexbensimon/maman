@@ -32,7 +32,7 @@ export default ({ data }) => {
           Dans mon parcours, rien ne me destinait à pratiquer le Shiatsu
           traditionnel. Juriste de formation, j’ai évolué dans le milieu
           juridique durant 26 ans dont près de 20 ans en statut libéral. Le
-          stress faisait partie de mon quotidien nourrit par l’exigence de
+          stress faisait partie de mon quotidien nourri par l’exigence de
           l’immédiateté et l’urgence de chaque instant. Il y a huit ans j’ai été
           touchée par un cancer du sein, après avoir suivi un traitement de
           chimiothérapie et de radiothérapie, des effets secondaires difficiles
