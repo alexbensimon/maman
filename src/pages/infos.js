@@ -6,21 +6,18 @@ import { Content } from '../components/content';
 import { Header } from '../components/header/header';
 import { Layout } from '../components/layout';
 
-export default () => {
+export default ({ location }) => {
   return (
     <Layout>
       <BaseHead />
       <Helmet>
-        <title>
-          Infos pratiques | Marielle Tuil-Bensimon - Praticienne en Shiatsu
-          traditionnel
-        </title>
+        <title>Infos pratiques | Marielle Tuil-Bensimon</title>
         <meta
           name="description"
           content="Contact, durée, prix et formules des séances de Shiatsu en cabinet, à domicile et en entreprise."
         />
       </Helmet>
-      <Header />
+      <Header pathname={location.pathname} />
       <Content>
         <h1>Infos pratiques</h1>
         <p>

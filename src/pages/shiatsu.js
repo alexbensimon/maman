@@ -7,27 +7,26 @@ import { BaseHead } from '../components/basehead';
 import { Content } from '../components/content';
 import { Header } from '../components/header/header';
 import { Layout } from '../components/layout';
+import { Quote } from '../components/quote';
 
-export default ({ data }) => {
+export default ({ data, location }) => {
   return (
     <Layout>
       <BaseHead />
       <Helmet>
-        <title>
-          Shiatsu | Marielle Tuil-Bensimon - Praticienne en Shiatsu traditionnel
-        </title>
+        <title>Shiatsu | Marielle Tuil-Bensimon</title>
         <meta
           name="description"
           content="Le Shiatsu est une pratique manuelle énergétique japonaise qui prend ses racines dans la médecine traditionnelle chinoise."
         />
       </Helmet>
-      <Header />
+      <Header pathname={location.pathname} />
       <Content>
         <h1>Shiatsu</h1>
-        <h2>
+        <Quote>
           “L’âme du Shiatsu est semblable à l’affection maternelle; la pression
           des mains fait jaillir la vie” — Tokujiro Namikoshi
-        </h2>
+        </Quote>
         <p>En japonais, Shiatsu signifie “pression avec les doigts”.</p>
         <p>
           Le Shiatsu est une pratique manuelle énergétique japonaise qui prend
@@ -47,14 +46,14 @@ export default ({ data }) => {
         <p>
           En début de séance, je vous demanderai les raisons de votre présence
           (stress, digestif, fatigue, sommeil ou autres…), vos antécédents
-          médicaux et de me préciser votre environnement de travail, familial ou
-          autres. Puis, dans un second temps, je vous inviterai à vous allonger
-          sur le ventre les bras le long du corps puis, j’exercerai des
+          médicaux, et de me préciser votre environnement de travail, familial
+          ou autres. Puis, dans un second temps, je vous inviterai à vous
+          allonger sur le ventre les bras le long du corps, puis j’exercerai des
           pressions verticales précises, douces et profondes le plus souvent
           avec la pulpe de mes pouces mais aussi avec les doigts, les paumes des
           mains, les coudes, les avant-bras et les pieds sur l’ensemble de votre
-          corps le long des canaux par lesquels l’énergie circule appelés
-          méridiens et sur les points d’acupuncture; au cours des séances
+          corps le long des canaux par lesquels l’énergie circule, appelés
+          méridiens, et sur les points d’acupuncture. Au cours des séances
           j’utiliserai des pressions, des techniques vibratoires, des étirements
           progressifs, des réchauffements et des percussions.
         </p>
@@ -64,14 +63,14 @@ export default ({ data }) => {
         />
         <p>
           Le Shiatsu est une pratique du lâcher-prise, il permet de relâcher à
-          la fois les tensions musculaires et les ressassements du mental; il
+          la fois les tensions musculaires et les ressassements du mental. Il
           procure une détente et un bien-être profond et permet au corps de
-          stimuler ses capacités naturelles d’auto-régulation; s’accorder une
+          stimuler ses capacités naturelles d’auto-régulation. S’accorder une
           séance de Shiatsu est un véritable allié contre le stress, la fatigue,
           et permet d’améliorer le sommeil. il est source d’apaisement et de
           vitalité, et il vous aidera à prendre conscience de votre corps lors
           des dissolutions des zones bloquées. Le Shiatsu est un toucher subtil
-          qui permet de libérer les tensions et d’équilibrer les émotions; il
+          qui permet de libérer les tensions et d’équilibrer les émotions. Il
           peut soulager aussi les douleurs du dos, des épaules ou des jambes.
         </p>
         <p>
@@ -85,7 +84,7 @@ export default ({ data }) => {
           des vibrations je vais détendre profondément toute cette zone, ce qui
           aura pour effet de rééquilibrer cette région sensible qui est souvent
           le lieu de nos émotions enfouies dont certaines sont cristallisées
-          depuis longtemps provoquant des désagréments physiques.
+          depuis longtemps, provoquant des désagréments physiques.
         </p>
         <Img
           fluid={data.ampuku.childImageSharp.fluid}
@@ -94,11 +93,11 @@ export default ({ data }) => {
         <p>
           Mes pratiques du Qi Gong et du Do In depuis cinq ans, mise en éveil du
           corps me permettent d’entretenir ma forme physique et psychique afin
-          de bien me préparer avant de donner une séance de Shiatsu; grâce à ces
+          de bien me préparer avant de donner une séance de Shiatsu. Grâce à ces
           exercices de respiration profonde, mon corps se détend et le flots de
           mes pensées diminue permettant une meilleure concentration avec une
           présence ici et maintenant et un calme intérieur, atouts qui
-          enrichissent ma pratique du Shiatsu; un travail centré sur l’attention
+          enrichissent ma pratique du Shiatsu. Un travail centré sur l’attention
           et l’intention bienveillante permet d’équilibrer les énergies dans le
           corps et d’aider la personne qui reçoit le Shiatsu à entreprendre le
           retour vers elle-même afin qu’elle trouve ses propres solutions.

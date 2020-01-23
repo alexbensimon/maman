@@ -1,26 +1,45 @@
 import styled from '@emotion/styled';
 import { Link } from 'gatsby';
 import React from 'react';
+import { colors } from '../../utils/colors';
 
-export const Sections = () => (
+export const Sections = ({ pathname }) => (
   <Container>
-    <Link to="/">
-      <h3>Présentation</h3>
+    <Link to={urls.index}>
+      <Section pathname={pathname} section={urls.index}>
+        Présentation
+      </Section>
     </Link>
-    <Link to="/shiatsu">
-      <h3>Shiatsu</h3>
+    <Link to={urls.shiatsu}>
+      <Section pathname={pathname} section={urls.shiatsu}>
+        Shiatsu
+      </Section>
     </Link>
-    <Link to="/entreprise">
-      <h3>En entreprise</h3>
+    <Link to={urls.entreprise}>
+      <Section pathname={pathname} section={urls.entreprise}>
+        En entreprise
+      </Section>
     </Link>
-    <Link to="/ateliers">
-      <h3>Ateliers</h3>
+    <Link to={urls.ateliers}>
+      <Section pathname={pathname} section={urls.ateliers}>
+        Ateliers
+      </Section>
     </Link>
-    <Link to="/infos">
-      <h3>Infos pratiques</h3>
+    <Link to={urls.infos}>
+      <Section pathname={pathname} section={urls.infos}>
+        Infos pratiques
+      </Section>
     </Link>
   </Container>
 );
+
+const urls = {
+  index: '/',
+  shiatsu: '/shiatsu',
+  entreprise: '/entreprise',
+  ateliers: '/ateliers',
+  infos: '/infos',
+};
 
 const Container = styled.div`
   display: flex;
@@ -28,4 +47,9 @@ const Container = styled.div`
   @media (max-width: 600px) {
     flex-direction: column;
   }
+`;
+
+const Section = styled.h3`
+  color: ${props =>
+    props.pathname === props.section ? colors.alert : colors.black};
 `;

@@ -6,22 +6,20 @@ import { BaseHead } from '../components/basehead';
 import { Content } from '../components/content';
 import { Header } from '../components/header/header';
 import { Layout } from '../components/layout';
+import { Quote } from '../components/quote';
 
-export default ({ data }) => {
+export default ({ data, location }) => {
   return (
     <Layout>
       <BaseHead />
       <Helmet>
-        <title>
-          Shiatsu en entreprise | Marielle Tuil-Bensimon - Praticienne en
-          Shiatsu traditionnel
-        </title>
+        <title>Shiatsu en entreprise | Marielle Tuil-Bensimon</title>
         <meta
           name="description"
           content="Les effets seront à la fois de relaxer et de dynamiser le salarié, ce qui lui permettra de reprendre son travail efficacement."
         />
       </Helmet>
-      <Header />
+      <Header pathname={location.pathname} />
       <Content>
         <h1>En entreprise</h1>
         <p>
@@ -63,9 +61,9 @@ export default ({ data }) => {
           relaxer et de dynamiser le salarié, ce qui lui permettra de reprendre
           son travail efficacement.
         </p>
-        <h2>
+        <Quote>
           “Beaucoup pensent à vivre longtemps, peu à bien vivre” — Socrate
-        </h2>
+        </Quote>
       </Content>
     </Layout>
   );
