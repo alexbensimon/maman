@@ -51,5 +51,5 @@ const Container = styled.div`
 
 const Section = styled.h3`
   color: ${props =>
-    props.pathname === props.section ? colors.alert : colors.black};
+    props.pathname === props.section ? colors.red : colors.black};
 `;

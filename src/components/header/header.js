@@ -30,5 +30,5 @@ const Top = styled.div`
 const Title = styled.h1`
   margin-top: 0;
   padding-top: 20px;
-  color: ${colors.alert};
+  color: ${colors.red};
 `;

@@ -31,7 +31,7 @@ export const Menu = ({ pathname }) => {
 };
 
 const Container = styled.div`
-  background-color: ${colors.light};
+  background-color: ${colors.beige};
 `;
 
 const MenuMobile = styled.div`

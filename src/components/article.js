@@ -13,13 +13,13 @@ export const Article = ({ url, title }) => (
 const Container = styled.a`
   min-height: 60px;
   border-radius: 2px;
-  color: ${colors.primary};
+  color: ${colors.green};
   display: flex;
   align-items: center;
   justify-content: center;
   margin-bottom: 20px;
   padding: 10px 0;
-  background-color: ${colors.light};
+  background-color: ${colors.beige};
 `;
 
 const Title = styled.span`
