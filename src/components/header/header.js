@@ -11,7 +11,10 @@ export const Header = ({ pathname }) => {
         <Link to="/">
           <Title>L'envol du souffle</Title>
         </Link>
-        <h2>Marielle Tuil-Bensimon - Praticienne en Shiatsu traditionnel</h2>
+        <h2>
+          Marielle Tuil-Bensimon
+          <Extension> - Praticienne en Shiatsu traditionnel</Extension>
+        </h2>
         <h3>Entretenez votre énergie, votre équilibre et votre sérénité</h3>
       </Top>
       <Menu pathname={pathname} />
@@ -31,4 +34,10 @@ const Title = styled.h1`
   margin-top: 0;
   padding-top: 20px;
   color: ${colors.red};
+`;
+
+const Extension = styled.span`
+  @media (max-width: 600px) {
+    display: none;
+  }
 `;
