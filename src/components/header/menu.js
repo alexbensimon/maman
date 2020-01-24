@@ -8,19 +8,15 @@ export const Menu = ({ pathname }) => {
   const [showFullHeader, setShowFullHeader] = useState(false);
   return (
     <Container>
-      <MenuMobile>
-        <div>
-          <button
-            onClick={() => setShowFullHeader(showFullHeader => !showFullHeader)}
-          >
-            <h3>Menu</h3>
-            {showFullHeader ? (
-              <MdKeyboardArrowUp size={30} />
-            ) : (
-              <MdKeyboardArrowDown size={30} />
-            )}
-          </button>
-        </div>
+      <MenuMobile
+        onClick={() => setShowFullHeader(showFullHeader => !showFullHeader)}
+      >
+        <h3>Menu</h3>
+        {showFullHeader ? (
+          <MdKeyboardArrowUp size={30} />
+        ) : (
+          <MdKeyboardArrowDown size={30} />
+        )}
         {showFullHeader && <Sections pathname={pathname} />}
       </MenuMobile>
       <MenuDesktop>
@@ -35,6 +31,9 @@ const Container = styled.div`
 `;
 
 const MenuMobile = styled.div`
+  @media (max-width: 600px) {
+    display: inline-block;
+  }
   @media (min-width: 600px) {
     display: none;
   }
