@@ -18,11 +18,11 @@ const Container = styled.a`
   align-items: center;
   justify-content: center;
   margin-bottom: 20px;
-  padding: 10px 0;
+  padding: 10px 15px;
   background-color: ${colors.beige};
 `;
 
 const Title = styled.span`
-  margin-right: 10px;
+  margin-right: 15px;
   width: 90%;
 `;
