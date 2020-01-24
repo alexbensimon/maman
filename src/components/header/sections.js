@@ -35,10 +35,10 @@ export const Sections = ({ pathname }) => (
 
 const urls = {
   index: '/',
-  shiatsu: '/shiatsu',
-  entreprise: '/entreprise',
-  ateliers: '/ateliers',
-  infos: '/infos',
+  shiatsu: '/shiatsu/',
+  entreprise: '/entreprise/',
+  ateliers: '/ateliers/',
+  infos: '/infos/',
 };
 
 const Container = styled.div`
