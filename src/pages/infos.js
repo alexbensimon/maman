@@ -19,11 +19,11 @@ export default ({ location }) => {
       </Helmet>
       <Header pathname={location.pathname} />
       <Content>
-        <h1>Infos pratiques</h1>
+        <h2>Infos pratiques</h2>
         <p>
           <UnderlineBold>Sur rendez-vous</UnderlineBold> : 06 23 14 88 96
         </p>
-        <h2>Tarifs</h2>
+        <h3>Tarifs</h3>
         <p>Durée de la séance : ~ 1 heure</p>
         <span>En cabinet</span>
         <List>

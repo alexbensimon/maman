@@ -21,7 +21,7 @@ export default ({ data, location }) => {
       </Helmet>
       <Header pathname={location.pathname} />
       <Content>
-        <h1>En entreprise</h1>
+        <h2>En entreprise</h2>
         <p>
           Instaurer des espaces de détente corporelle afin d’apporter le
           bien-être au travail en réduisant les tensions, le stress et la

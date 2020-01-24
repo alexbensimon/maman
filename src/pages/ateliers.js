@@ -22,12 +22,12 @@ export default ({ data, location }) => {
       </Helmet>
       <Header pathname={location.pathname} />
       <Content>
-        <h1>Ateliers</h1>
+        <h2>Ateliers</h2>
         <Img
           fluid={data.file.childImageSharp.fluid}
           alt="Un oiseau qui se tient droit"
         />
-        <h2>Do In et Qi Gong : Un esprit calme dans un corps détendu</h2>
+        <h3>Do In et Qi Gong : Un esprit calme dans un corps détendu</h3>
         <p>
           Place aux techniques énergétiques avec un atelier par mois afin de
           partir à la découverte de ces pratiques de revitalisation et

@@ -23,7 +23,7 @@ export default ({ data, location }) => {
       </Helmet>
       <Header pathname={location.pathname} />
       <Content>
-        <h1>Présentation</h1>
+        <h2>Présentation</h2>
         <Quote>
           “A force de sacrifier l’essentiel pour l’urgence, on finit par oublier
           l’urgence de l’essentiel” — Edgar Morin
@@ -83,7 +83,7 @@ export default ({ data, location }) => {
           fluid={data.file.childImageSharp.fluid}
           alt="Une oie qui court sur l'eau"
         />
-        <h2>Formations</h2>
+        <h3>Formations</h3>
         <ul>
           <li>
             Certifiée praticienne en Shiatsu traditionnel de l’école ZEN PLUS de

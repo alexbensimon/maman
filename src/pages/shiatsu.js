@@ -1,3 +1,4 @@
+import styled from '@emotion/styled';
 import { graphql } from 'gatsby';
 import Img from 'gatsby-image';
 import React from 'react';
@@ -8,6 +9,7 @@ import { Content } from '../components/content';
 import { Header } from '../components/header/header';
 import { Layout } from '../components/layout';
 import { Quote } from '../components/quote';
+import { colors } from '../utils/colors';
 
 export default ({ data, location }) => {
   return (
@@ -22,7 +24,7 @@ export default ({ data, location }) => {
       </Helmet>
       <Header pathname={location.pathname} />
       <Content>
-        <h1>Shiatsu</h1>
+        <h2>Shiatsu</h2>
         <Quote>
           “L’âme du Shiatsu est semblable à l’affection maternelle; la pression
           des mains fait jaillir la vie” — Tokujiro Namikoshi
@@ -61,6 +63,7 @@ export default ({ data, location }) => {
           fluid={data.shiatsuMain.childImageSharp.fluid}
           alt="Une main d'enfant est massée par deux mains"
         />
+        <Source>Photo par Céline Fauquez Martinez</Source>
         <p>
           Le Shiatsu est une pratique du lâcher-prise, il permet de relâcher à
           la fois les tensions musculaires et les ressassements du mental. Il
@@ -117,6 +120,12 @@ export default ({ data, location }) => {
     </Layout>
   );
 };
+
+const Source = styled.p`
+  font-size: 16px;
+  line-height: 20px;
+  color: ${colors.gray};
+`;
 
 export const query = graphql`
   {

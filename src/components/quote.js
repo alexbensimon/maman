@@ -4,6 +4,6 @@ import { colors } from '../utils/colors';
 
 export const Quote = ({ children }) => <Text>{children}</Text>;
 
-const Text = styled.h2`
+const Text = styled.h3`
   color: ${colors.red};
 `;
