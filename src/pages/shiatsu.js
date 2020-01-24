@@ -125,6 +125,7 @@ const Source = styled.p`
   font-size: 16px;
   line-height: 20px;
   color: ${colors.gray};
+  text-align: center;
 `;
 
 export const query = graphql`

@@ -23,6 +23,7 @@ export default ({ location }) => {
         <p>
           <UnderlineBold>Sur rendez-vous</UnderlineBold> : 06 23 14 88 96
         </p>
+        <p>Email : mariellebensimon@gmail.com</p>
         <h3>Tarifs</h3>
         <p>Durée de la séance : ~ 1 heure</p>
         <span>En cabinet</span>
