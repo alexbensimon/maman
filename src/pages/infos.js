@@ -1,6 +1,7 @@
 import styled from '@emotion/styled';
 import React from 'react';
 import Helmet from 'react-helmet';
+import { IoLogoGoogle } from 'react-icons/io';
 import { BaseHead } from '../components/basehead';
 import { Content } from '../components/content';
 import { Header } from '../components/header/header';
@@ -24,6 +25,14 @@ export default ({ location }) => {
           <UnderlineBold>Sur rendez-vous</UnderlineBold> : 06 23 14 88 96
         </p>
         <p>Email : mariellebensimon@gmail.com</p>
+        <GoogleReviewsLink
+          href="https://www.google.com/maps/place/Shiatsu+Saint-Cloud+-+Marielle+Tuil-Bensimon/@48.8532922,2.2108245,17z/data=!3m1!4b1!4m7!3m6!1s0x0:0x622a76d0b6cd20d7!8m2!3d48.8532922!4d2.2130132!9m1!1b1?hl=fr"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <IoLogoGoogle size={30} />
+          <GoogleReviewsLinkText>Voir les avis Google</GoogleReviewsLinkText>
+        </GoogleReviewsLink>
         <h3>Tarifs</h3>
         <p>Durée de la séance : ~ 1 heure</p>
         <span>En cabinet</span>
@@ -44,6 +53,18 @@ export default ({ location }) => {
 const UnderlineBold = styled.span`
   text-decoration: underline;
   font-weight: bold;
+`;
+
+const GoogleReviewsLink = styled.a`
+  font-family: 'Roboto', sans-serif;
+  :hover {
+    text-decoration: underline;
+  }
+  display: flex;
+`;
+
+const GoogleReviewsLinkText = styled.span`
+  margin-left: 5px;
 `;
 
 const List = styled.ul`
