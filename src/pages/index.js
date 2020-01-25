@@ -28,6 +28,10 @@ export default ({ data, location }) => {
           “A force de sacrifier l’essentiel pour l’urgence, on finit par oublier
           l’urgence de l’essentiel” — Edgar Morin
         </Quote>
+        <Img
+          fluid={data.marielle.childImageSharp.fluid}
+          alt="Marielle avec les bras ouverts"
+        />
         <p>
           Dans mon parcours, rien ne me destinait à pratiquer le Shiatsu
           traditionnel. Juriste de formation, j’ai évolué dans le milieu
@@ -80,7 +84,7 @@ export default ({ data, location }) => {
           contact et de communication avec autrui.
         </p>
         <Img
-          fluid={data.file.childImageSharp.fluid}
+          fluid={data.oie.childImageSharp.fluid}
           alt="Une oie qui court sur l'eau"
         />
         <h3>Formations</h3>
@@ -117,7 +121,14 @@ export default ({ data, location }) => {
 
 export const query = graphql`
   {
-    file(relativePath: { eq: "oie-court-eau.jpg" }) {
+    marielle: file(relativePath: { eq: "marielle-bras-ouverts.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 680) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    oie: file(relativePath: { eq: "oie-court-eau.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 680) {
           ...GatsbyImageSharpFluid
