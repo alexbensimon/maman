@@ -108,10 +108,13 @@ export default ({ data, location }) => {
             Ecole ZHI ROU JIA, “l’école du développement de la douceur” (en 3ème
             et dernière année).
           </li>
-          <li>Certificat de qualification professionnelle (CQP), Fédération</li>
           <li>
-            Sport Pour Tous (formation en cours) Ana PEROCCO, tutrice dans le
-            cadre du CQP et enseignante Qi Gong et Do In.
+            Certificat de qualification professionnelle (CQP), Fédération Sport
+            Pour Tous (formation en cours).
+          </li>
+          <li>
+            Ana PEROCCO, tutrice dans le cadre du CQP et enseignante Qi Gong et
+            Do In.
           </li>
         </ul>
       </Content>
