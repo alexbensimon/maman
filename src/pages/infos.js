@@ -26,7 +26,7 @@ export default ({ location }) => {
         </p>
         <p>Email : mariellebensimon@gmail.com</p>
         <GoogleReviewsLink
-          href="https://www.google.com/maps/place/Shiatsu+Saint-Cloud+-+Marielle+Tuil-Bensimon/@48.8532922,2.2108245,17z/data=!3m1!4b1!4m7!3m6!1s0x0:0x622a76d0b6cd20d7!8m2!3d48.8532922!4d2.2130132!9m1!1b1?hl=fr"
+          href="https://www.google.fr/search?q=Shiatsu+Saint-Cloud+-+Marielle+Tuil-Bensimon&ludocid=7073596803530957015&lsig=AB86z5UpmC0wtz1NGu_elXq0Msxu#fpstate=lie&lrd=0x47e67b81390e309f:0x622a76d0b6cd20d7,1,,,"
           target="_blank"
           rel="noopener noreferrer"
         >

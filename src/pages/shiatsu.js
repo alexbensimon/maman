@@ -39,7 +39,7 @@ export default ({ data, location }) => {
           sont parfois nécessaires pour agir en profondeur et stabiliser les
           effets. Ensuite, des séances à un rythme plus espacé (une fois par
           mois ou lors des changements de saisons) permettent d’entretenir
-          l’équilibre. le Shiatsu se reçoit habillé, il se pratique au sol sur
+          l’équilibre. Le Shiatsu se reçoit habillé, il se pratique au sol sur
           un futon ou en position assise (Shiatsu Amma) sur une chaise
           ergonomique. Le Shiatsu est facile à mettre en oeuvre; on peut
           s’installer partout et changer de place rapidement. Il s’intègre dans
@@ -70,7 +70,7 @@ export default ({ data, location }) => {
           procure une détente et un bien-être profond et permet au corps de
           stimuler ses capacités naturelles d’auto-régulation. S’accorder une
           séance de Shiatsu est un véritable allié contre le stress, la fatigue,
-          et permet d’améliorer le sommeil. il est source d’apaisement et de
+          et permet d’améliorer le sommeil. Il est source d’apaisement et de
           vitalité, et il vous aidera à prendre conscience de votre corps lors
           des dissolutions des zones bloquées. Le Shiatsu est un toucher subtil
           qui permet de libérer les tensions et d’équilibrer les émotions. Il

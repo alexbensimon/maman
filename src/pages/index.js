@@ -45,9 +45,9 @@ export default ({ data, location }) => {
           conseils d’une amie, j’ai rencontré les pratiques de Qi Gong et de Do
           In (automassages ou auto-shiatsu) qui m’ont permis rapidement de
           retrouver un second souffle et mon énergie vitale. Plusieurs effets
-          secondaires ont disparus. Je me suis réconciliée avec mon corps et
-          cela a boosté ma combativité face à la maladie. Ces pratiques m’ont
-          offert des résultats immédiats et durables.
+          secondaires ont disparu. Je me suis réconciliée avec mon corps et cela
+          a boosté ma combativité face à la maladie. Ces pratiques m’ont offert
+          des résultats immédiats et durables.
         </p>
         <p>
           Pratiquer au quotidien le Qi Gong et le Do in m’ont permis de prendre
@@ -79,7 +79,7 @@ export default ({ data, location }) => {
           Le Shiatsu et le Do In sont deux méthodes de bien-être destinées à
           prévenir la maladie, à maintenir et renforcer santé et équilibre. Do
           In ou auto-shiatsu est une technique d’harmonisation et de
-          revitalisation qui se pratique par soi-même sur soi-même. le Shiatsu
+          revitalisation qui se pratique par soi-même sur soi-même. Le Shiatsu
           se réalise sur les autres et représente un extraordinaire moyen de
           contact et de communication avec autrui.
         </p>
