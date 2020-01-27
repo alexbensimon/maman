@@ -63,7 +63,6 @@ export default ({ data, location }) => {
           fluid={data.shiatsuMain.childImageSharp.fluid}
           alt="Une main d'enfant est massée par deux mains"
         />
-        <Source>Photo par Céline Fauquez Martinez</Source>
         <p>
           Le Shiatsu est une pratique du lâcher-prise, il permet de relâcher à
           la fois les tensions musculaires et les ressassements du mental. Il
@@ -120,13 +119,6 @@ export default ({ data, location }) => {
     </Layout>
   );
 };
-
-const Source = styled.p`
-  font-size: 16px;
-  line-height: 20px;
-  color: ${colors.gray};
-  text-align: center;
-`;
 
 export const query = graphql`
   {
