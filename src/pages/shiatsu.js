@@ -1,4 +1,3 @@
-import styled from '@emotion/styled';
 import { graphql } from 'gatsby';
 import Img from 'gatsby-image';
 import React from 'react';
@@ -9,7 +8,6 @@ import { Content } from '../components/content';
 import { Header } from '../components/header/header';
 import { Layout } from '../components/layout';
 import { Quote } from '../components/quote';
-import { colors } from '../utils/colors';
 
 export default ({ data, location }) => {
   return (
