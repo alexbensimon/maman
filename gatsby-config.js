@@ -14,5 +14,13 @@ module.exports = {
     },
     'gatsby-transformer-sharp',
     'gatsby-plugin-sharp',
+    {
+      resolve: 'gatsby-plugin-gtag',
+      options: {
+        trackingId: 'UA-158039467-1',
+        head: false,
+        anonymize: true,
+      },
+    },
   ],
 };
