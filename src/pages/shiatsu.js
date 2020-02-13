@@ -13,7 +13,7 @@ export default ({ data, location }) => (
   <Layout>
     <BaseHead />
     <Helmet>
-      <title>Shiatsu | Marielle Tuil-Bensimon</title>
+      <title>Qu'est-ce que le Shiatsu ? | Marielle Tuil-Bensimon</title>
       <meta
         name="description"
         content="Le Shiatsu est une pratique manuelle énergétique japonaise qui prend ses racines dans la médecine traditionnelle chinoise."
@@ -21,7 +21,7 @@ export default ({ data, location }) => (
     </Helmet>
     <Header pathname={location.pathname} />
     <Content>
-      <h2>Shiatsu</h2>
+      <h2>Qu'est-ce que le Shiatsu ?</h2>
       <Quote>
         “L’âme du Shiatsu est semblable à l’affection maternelle; la pression
         des mains fait jaillir la vie” — Tokujiro Namikoshi

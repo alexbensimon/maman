@@ -20,7 +20,7 @@ export default ({ data, location }) => (
     </Helmet>
     <Header pathname={location.pathname} />
     <Content>
-      <h2>En entreprise</h2>
+      <h2>Shiatsu en entreprise</h2>
       <p>
         Instaurer des espaces de détente corporelle afin d’apporter le bien-être
         au travail en réduisant les tensions, le stress et la fatigue. Le stress
