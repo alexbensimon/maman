@@ -1,7 +1,6 @@
 import styled from '@emotion/styled';
 import React from 'react';
 import Helmet from 'react-helmet';
-import { IoLogoGoogle } from 'react-icons/io';
 import { BaseHead } from '../components/basehead';
 import { Content } from '../components/content';
 import { Header } from '../components/header/header';
@@ -20,51 +19,79 @@ export default ({ location }) => (
     <Header pathname={location.pathname} />
     <Content>
       <h2>Infos pratiques</h2>
-      <p>
-        <UnderlineBold>Sur rendez-vous</UnderlineBold> : 06 23 14 88 96
-      </p>
-      <p>Email : mariellebensimon@gmail.com</p>
-      <GoogleReviewsLink
-        href="https://www.google.fr/search?q=Shiatsu+Saint-Cloud+-+Marielle+Tuil-Bensimon&ludocid=7073596803530957015&lsig=AB86z5UpmC0wtz1NGu_elXq0Msxu#fpstate=lie&lrd=0x47e67b81390e309f:0x622a76d0b6cd20d7,1,,,"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <IoLogoGoogle size={30} />
-        <GoogleReviewsLinkText>Voir les avis Google</GoogleReviewsLinkText>
-      </GoogleReviewsLink>
-      <h3>Tarifs</h3>
-      <p>Durée de la séance : ~ 1 heure</p>
-      <span>En cabinet</span>
-      <List>
-        <li>1 séance : 60 €</li>
-        <li>3 séances : 150 €</li>
-      </List>
-      <p>A domicile - 1 séance : 70 €</p>
-      <p>Enfant : 30 min - 35 € (en cabinet)</p>
-      <p>
-        <b>En entreprise</b> : 70 € de l’heure
-      </p>
+      <BigSection>
+        <h3>Contact</h3>
+        <div>
+          Prendre rendez-vous :{' '}
+          <Link href="tel:0623148896">06 23 14 88 96</Link>
+        </div>
+        <div>
+          Email :{' '}
+          <Link href="mailto:mariellebensimon@gmail.com">
+            mariellebensimon@gmail.com
+          </Link>
+        </div>
+      </BigSection>
+      <BigSection>
+        <h3>Tarifs</h3>
+        <SmallSection>
+          <SmallTitle>Au cabinet</SmallTitle>
+          <LinkContainer>
+            Situé au{' '}
+            <Link
+              href="https://goo.gl/maps/54CwiUKxRw6q5LDN6"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              1 Résidence Beausoleil, 92210 Saint-Cloud
+            </Link>
+          </LinkContainer>
+          <div>Durée de la séance : ~ 1 heure</div>
+          <List>
+            <li>1 séance : 60 €</li>
+            <li>3 séances : 150 €</li>
+          </List>
+          <div>Enfant : 30 min - 35 €</div>
+        </SmallSection>
+
+        <SmallSection>
+          <SmallTitle>À domicile</SmallTitle>
+          <div>1 séance : 70 €</div>
+        </SmallSection>
+
+        <SmallSection>
+          <SmallTitle>En entreprise</SmallTitle>
+          <div>Durée de la séance : ~ 20 minutes</div>
+          <div>70 € / heure</div>
+        </SmallSection>
+      </BigSection>
     </Content>
   </Layout>
 );
 
-const UnderlineBold = styled.span`
-  text-decoration: underline;
-  font-weight: bold;
+const BigSection = styled.div`
+  margin-bottom: 50px;
 `;
 
-const GoogleReviewsLink = styled.a`
+const SmallSection = styled.div`
+  margin-bottom: 35px;
+`;
+
+const SmallTitle = styled.h4`
+  margin-bottom: 10px;
+`;
+
+const LinkContainer = styled.div`
+  margin-bottom: 15px;
+`;
+
+const Link = styled.a`
   font-family: 'Roboto', sans-serif;
-  :hover {
-    text-decoration: underline;
-  }
-  display: flex;
-`;
-
-const GoogleReviewsLinkText = styled.span`
-  margin-left: 5px;
+  text-decoration: underline;
+  margin-bottom: 15px;
 `;
 
 const List = styled.ul`
   margin-top: 0;
+  margin-bottom: 10px;
 `;

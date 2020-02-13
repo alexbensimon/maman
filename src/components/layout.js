@@ -29,7 +29,8 @@ export const Layout = ({ children }) => (
               line-height: 40px;
             }
           }
-          h2 {
+          h2,
+          h4 {
             font-family: 'Merienda', cursive;
           }
           h3 {
