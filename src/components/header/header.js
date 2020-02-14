@@ -13,9 +13,11 @@ export const Header = ({ pathname }) => {
         </Link>
         <Name>
           Marielle Tuil-Bensimon
-          <Extension> - Praticienne en Shiatsu traditionnel</Extension>
+          <Extension> - Praticienne en Shiatsu{'\u00a0'}traditionnel</Extension>
         </Name>
-        <h3>Entretenez votre énergie, votre équilibre et votre sérénité</h3>
+        <h3>
+          Entretenez votre énergie, votre équilibre et votre{'\u00a0'}sérénité
+        </h3>
       </Top>
       <Menu pathname={pathname} />
     </Container>
