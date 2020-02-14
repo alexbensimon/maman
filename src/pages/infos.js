@@ -33,7 +33,7 @@ export default ({ location }) => (
         </div>
       </BigSection>
       <BigSection>
-        <h3>Tarifs</h3>
+        <h3>Tarifs Shiatsu</h3>
         <SmallSection>
           <SmallTitle>Au cabinet</SmallTitle>
           <LinkContainer>
