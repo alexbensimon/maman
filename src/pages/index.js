@@ -1,12 +1,15 @@
-import { graphql } from 'gatsby';
+import styled from '@emotion/styled';
+import { graphql, Link } from 'gatsby';
 import Img from 'gatsby-image';
 import React from 'react';
 import Helmet from 'react-helmet';
+import { MdWarning } from 'react-icons/md';
 import { BaseHead } from '../components/basehead';
 import { Content } from '../components/content';
 import { Header } from '../components/header/header';
 import { Layout } from '../components/layout';
 import { Quote } from '../components/quote';
+import { colors } from '../utils/colors';
 
 export default ({ data, location }) => (
   <Layout>
@@ -22,6 +25,14 @@ export default ({ data, location }) => (
     </Helmet>
     <Header pathname={location.pathname} />
     <Content>
+      <Link to="/covid">
+        <CovidBlock>
+          <MdWarning size="2em" />
+          <span>
+            Voir les mesures que je mets en place contre le&nbsp;COVID-19
+          </span>
+        </CovidBlock>
+      </Link>
       <h2>Présentation</h2>
       <Quote>
         “A force de sacrifier l’essentiel pour l’urgence, on finit par oublier
@@ -117,6 +128,21 @@ export default ({ data, location }) => (
     </Content>
   </Layout>
 );
+
+const CovidBlock = styled.div`
+  border-radius: 20px;
+  background-color: ${colors.red};
+  color: ${colors.beige};
+  padding: 15px 30px;
+  text-align: center;
+  span {
+    display: block;
+    text-decoration: underline;
+  }
+  @media (max-width: 600px) {
+    margin-top: 20px;
+  }
+`;
 
 export const query = graphql`
   {

@@ -11,7 +11,7 @@ export const Menu = ({ pathname }) => {
       <MenuMobile
         onClick={() => setShowFullHeader(showFullHeader => !showFullHeader)}
       >
-        <h3>Menu</h3>
+        <Title>Menu</Title>
         {showFullHeader ? (
           <MdKeyboardArrowUp size={30} />
         ) : (
@@ -37,6 +37,10 @@ const MenuMobile = styled.div`
   @media (min-width: 600px) {
     display: none;
   }
+`;
+
+const Title = styled.h3`
+  text-decoration: underline;
 `;
 
 const MenuDesktop = styled.div`

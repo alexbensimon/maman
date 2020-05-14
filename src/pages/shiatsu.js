@@ -21,7 +21,7 @@ export default ({ data, location }) => (
     </Helmet>
     <Header pathname={location.pathname} />
     <Content>
-      <h2>Qu'est-ce que le Shiatsu ?</h2>
+      <h2>Qu'est-ce que le&nbsp;Shiatsu&nbsp;?</h2>
       <Quote>
         “L’âme du Shiatsu est semblable à l’affection maternelle; la pression
         des mains fait jaillir la vie” — Tokujiro Namikoshi
