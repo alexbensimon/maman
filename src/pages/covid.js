@@ -18,30 +18,20 @@ export default ({ location }) => (
     </Helmet>
     <Header pathname={location.pathname} />
     <Content>
-      <h2>Document D.U.E.R* et règlement intérieur COVID-19</h2>
-      <p>
-        L’évaluation des risques dans ce cabinet sera renouvelée en raison de
-        l’épidémie, pour réduire au maximum les risques de contagion sur le lieu
-        du soin ou à l’occasion de la séance de Shiatsu.
-        <br /> Cette nouvelle évaluation est retranscrite dans ce document
-        unique d’évaluation des risques à date, lequel est actualisé pour tenir
-        compte des changements de circonstances.
-      </p>
-      <h3>
-        Précautions et garanties sanitaires du cabinet de Marielle Tuil-Bensimon
-        - L’envol du souffle
-      </h3>
+      <h2>Précautions et garanties sanitaires contre le COVID-19</h2>
       <p>
         Prendre toutes les mesures de nature à garantir la santé et la sécurité
         de tous, clientèle et praticienne.
       </p>
-      <h3>13 mai 2020</h3>
       <p>
-        Risques principaux évalués : contact étroit et prolongé (séance de
-        shiatsu).
+        En cas de symptômes (toux, fièvre ou difficultés respiratoires) ou perte
+        d’odorat/goût, le rendez-vous est refusé.
       </p>
-      <p>Mesures préventives des risques de contamination par le COVID-19 :</p>
+      <h3>
+        Mesures préventives des risques de contamination par le COVID-19 :
+      </h3>
       <ul>
+        <li>Ne pas serrer la main.</li>
         <li>
           Solution hydroalcoolique ou savon mis à la disposition avant et après
           chaque séance pour se laver les mains.
@@ -61,8 +51,13 @@ export default ({ location }) => (
           manches longues, chaussettes et masque couvrant le nez, la bouche, le
           menton et une petite serviette de toilette pour s’essuyer les mains
           après chaque lavage. Il se change dans la salle de bain prévue à cet
-          effet. Des couvertures recouvrent le corps du receveur lors de la
-          séance, lesquelles sont changées entre chaque client.
+          effet. Un tissu en coton type fouta couvre tout le corps du receveur
+          lors de la séance, lequel est changé pour chaque client et lavé à la
+          fin de la journée à 60°.
+        </li>
+        <li>Il se change dans la salle de bain prévue à cet effet. </li>
+        <li>
+          le receveur conserve son masque pendant toute la durée de la séance.
         </li>
         <li>
           A l’issue de la séance, il se change à nouveau et se lave les mains ;
@@ -73,10 +68,11 @@ export default ({ location }) => (
           visite etc).
         </li>
         <li>
-          La praticienne porte une tenue de pratique, elle porte également un
-          masque à usage unique à partir de l’accueil jusqu’au départ du client.
-          Elle se lave les mains au minimum avant et après la séance avec une
-          solution hydroalcoolique.
+          La praticienne porte une tenue de pratique réservée au cabinet, qui ne
+          transite pas par l’extérieur, elle porte également un masque à usage
+          unique à partir de l’accueil jusqu’au départ du client. Elle se lave
+          les mains au minimum avant et après la séance avec une solution
+          hydroalcoolique.
         </li>
         <li>La praticienne ne touche pas le visage du receveur.</li>
       </ul>
@@ -90,10 +86,10 @@ export default ({ location }) => (
         <li>
           Après chaque séance, les lieux sont aérés. Un nettoyage avec une
           solution désinfectante et antibactérienne sur toutes les surfaces
-          utilisées, les poignées de portes, les interrupteurs, la sonnette…
+          utilisées, chasse d’eau, cuvette, robinetterie, les poignées de
+          portes, les interrupteurs, la sonnette, téléphone portable, etc.
         </li>
       </ul>
-      <p>*D.U.E.R : Document Unique d’Evaluation des Risques</p>
     </Content>
   </Layout>
 );
