@@ -47,12 +47,12 @@ export default ({ data, location }) => (
         traditionnel. Juriste de formation, j’ai évolué dans le milieu juridique
         pendant 26 ans dont près de 20 ans en statut libéral. Le stress faisait
         partie de mon quotidien, nourri par l’exigence de l’immédiateté et
-        l’urgence de chaque instant. En 2011, j'ai été touchée par la maladie.
-        Après avoir suivi un traitement de chimiothérapie et de radiothérapie,
-        des effets secondaires difficiles à gérer sont apparus petit à petit; je
-        me sentais chuter, j’avais perdu ma joie de vivre et je ne me
-        reconnaissais plus. Sur les conseils d’une amie, j’ai rencontré les
-        pratiques de Qi Gong et de Do In (automassages ou auto-shiatsu) qui
+        l’urgence de chaque instant. En 2011, j'ai été touchée par un cancer du
+        sein. Après avoir suivi un traitement de chimiothérapie et de
+        radiothérapie, des effets secondaires difficiles à gérer sont apparus
+        petit à petit; je me sentais chuter, j’avais perdu ma joie de vivre et
+        je ne me reconnaissais plus. Sur les conseils d’une amie, j’ai rencontré
+        les pratiques de Qi Gong et de Do In (automassages ou auto-shiatsu) qui
         m’ont permis rapidement de retrouver un second souffle et mon énergie
         vitale. Plusieurs effets secondaires ont disparu. Je me suis réconciliée
         avec mon corps et cela a boosté ma combativité face à la maladie. Ces
