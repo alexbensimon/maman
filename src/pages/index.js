@@ -118,7 +118,7 @@ export default ({ data, location }) => (
         </li>
         <li>
           Certificat de qualification professionnelle (CQP), Fédération Sport
-          Pour Tous (formation en cours).
+          Pour Tous.
         </li>
         <li>
           Ana PEROCCO, tutrice dans le cadre du CQP et enseignante Qi Gong et Do
