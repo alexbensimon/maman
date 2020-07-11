@@ -24,7 +24,7 @@ export default ({ data, location }) => (
       <h2>Ateliers</h2>
       <Img
         fluid={data.file.childImageSharp.fluid}
-        alt="Un oiseau qui se tient droit"
+        alt="Marielle assise dans un cercle de pierres"
       />
       <h3>Do In et Qi Gong : Un esprit calme dans un corps détendu</h3>
       <p>
@@ -48,7 +48,7 @@ export default ({ data, location }) => (
 
 export const query = graphql`
   {
-    file(relativePath: { eq: "posture-oiseau.jpg" }) {
+    file(relativePath: { eq: "cercle-pierres.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 680) {
           ...GatsbyImageSharpFluid

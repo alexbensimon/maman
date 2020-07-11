@@ -25,7 +25,7 @@ export default ({ data, location }) => (
     </Helmet>
     <Header pathname={location.pathname} />
     <Content>
-      <Link to="/covid">
+      <Link to="/covid/">
         <CovidBlock>
           <MdWarning size="2em" />
           <span>
@@ -38,10 +38,12 @@ export default ({ data, location }) => (
         “A force de sacrifier l’essentiel pour l’urgence, on finit par oublier
         l’urgence de l’essentiel” — Edgar Morin
       </Quote>
-      <Img
-        fluid={data.marielle.childImageSharp.fluid}
-        alt="Marielle avec les bras ouverts"
-      />
+      <ImgPortraitContainer>
+        <Img
+          fluid={data.marielle.childImageSharp.fluid}
+          alt="Portrait de Marielle"
+        />
+      </ImgPortraitContainer>
       <p>
         Dans mon parcours, rien ne me destinait à pratiquer le Shiatsu
         traditionnel. Juriste de formation, j’ai évolué dans le milieu juridique
@@ -104,7 +106,7 @@ export default ({ data, location }) => (
         <li>Stage d’été Shiatsu assis avec Bernard BOUHERET.</li>
         <li>
           Certifiée formation professionnelle de Qi Gong de l’institut QUIMETAO,
-          Dr Jian Liujun.
+          Dr Jian Liujun, école agréée par la fédération Union Pro Qi Gong.
         </li>
         <li>
           Stages et cours hebdomadaires avec Véronique Viloing, enseignante Qi
@@ -113,8 +115,8 @@ export default ({ data, location }) => (
         </li>
         <li>Stage méditation MBSR avec Véronique Viloing (1er cycle).</li>
         <li>
-          Ecole ZHI ROU JIA, “l’école du développement de la douceur” (en 3ème
-          et dernière année).
+          Ecole ZHI ROU JIA, “l’école du développement de la douceur”, agréée
+          par la fédération Union Pro Qi Gong (en 3ème et dernière année).
         </li>
         <li>
           Certificat de qualification professionnelle (CQP), Fédération Sport
@@ -144,9 +146,14 @@ const CovidBlock = styled.div`
   }
 `;
 
+const ImgPortraitContainer = styled.div`
+  width: 70%;
+  margin: auto;
+`;
+
 export const query = graphql`
   {
-    marielle: file(relativePath: { eq: "marielle-bras-ouverts.jpg" }) {
+    marielle: file(relativePath: { eq: "marielle-portrait.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 680) {
           ...GatsbyImageSharpFluid
