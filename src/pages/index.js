@@ -106,7 +106,8 @@ export default ({ data, location }) => (
         <li>Stage d’été Shiatsu assis avec Bernard BOUHERET.</li>
         <li>
           Certifiée formation professionnelle de Qi Gong de l’institut QUIMETAO,
-          Dr Jian Liujun, école agréée par la fédération Union Pro Qi Gong.
+          Dr Jian Liujun, école agréée par la fédération Union Pro Qi Gong
+          FEQGAE.
         </li>
         <li>
           Stages et cours hebdomadaires avec Véronique Viloing, enseignante Qi
@@ -116,7 +117,8 @@ export default ({ data, location }) => (
         <li>Stage méditation MBSR avec Véronique Viloing (1er cycle).</li>
         <li>
           Ecole ZHI ROU JIA, “l’école du développement de la douceur”, agréée
-          par la fédération Union Pro Qi Gong (en 3ème et dernière année).
+          par la fédération Union Pro Qi Gong FEQGAE (en 3ème et dernière
+          année).
         </li>
         <li>
           Certificat de qualification professionnelle (CQP), Fédération Sport
