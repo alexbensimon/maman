@@ -40,7 +40,7 @@ export default ({ data, location }) => (
       </Quote>
       <ImgPortraitContainer>
         <Img
-          fluid={data.marielle.childImageSharp.fluid}
+          fluid={data.mariellePortrait.childImageSharp.fluid}
           alt="Portrait de Marielle"
         />
       </ImgPortraitContainer>
@@ -93,10 +93,12 @@ export default ({ data, location }) => (
         autres et représente un extraordinaire moyen de contact et de
         communication avec autrui.
       </p>
-      <Img
-        fluid={data.oie.childImageSharp.fluid}
-        alt="Une oie qui court sur l'eau"
-      />
+      <ImgPortraitContainer>
+        <Img
+          fluid={data.marielleShiatsuDos.childImageSharp.fluid}
+          alt="Marielle appuie ses mains sur le dos d'un homme allongé"
+        />
+      </ImgPortraitContainer>
       <h3>Formations</h3>
       <ul>
         <li>
@@ -107,18 +109,11 @@ export default ({ data, location }) => (
         <li>
           Certifiée formation professionnelle de Qi Gong de l’institut QUIMETAO,
           Dr Jian Liujun, école agréée par la fédération Union Pro Qi Gong
-          FEQGAE.
+          FEQGAE (2 ans).
         </li>
-        <li>
-          Stages et cours hebdomadaires avec Véronique Viloing, enseignante Qi
-          Gong de la verticalité, médecine traditionnelle chinoise et
-          méditation.
-        </li>
-        <li>Stage méditation MBSR avec Véronique Viloing (1er cycle).</li>
         <li>
           Ecole ZHI ROU JIA, “l’école du développement de la douceur”, agréée
-          par la fédération Union Pro Qi Gong FEQGAE (en 3ème et dernière
-          année).
+          par la fédération Union Pro Qi Gong FEQGAE (3 ans).
         </li>
         <li>
           Certificat de qualification professionnelle (CQP), Fédération Sport
@@ -128,6 +123,12 @@ export default ({ data, location }) => (
           Ana PEROCCO, tutrice dans le cadre du CQP et enseignante Qi Gong et Do
           In.
         </li>
+        <li>
+          Stages et cours hebdomadaires avec Véronique Viloing, enseignante Qi
+          Gong de la verticalité, médecine traditionnelle chinoise et
+          méditation.
+        </li>
+        <li>Stage méditation MBSR avec Véronique Viloing (1er cycle).</li>
       </ul>
     </Content>
   </Layout>
@@ -155,14 +156,14 @@ const ImgPortraitContainer = styled.div`
 
 export const query = graphql`
   {
-    marielle: file(relativePath: { eq: "marielle-portrait.jpg" }) {
+    mariellePortrait: file(relativePath: { eq: "marielle-portrait.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 680) {
           ...GatsbyImageSharpFluid
         }
       }
     }
-    oie: file(relativePath: { eq: "oie-court-eau.jpg" }) {
+    marielleShiatsuDos: file(relativePath: { eq: "marielle-shiatsu-dos.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 680) {
           ...GatsbyImageSharpFluid
