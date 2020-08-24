@@ -35,7 +35,7 @@ export default ({ location }) => (
       <BigSection>
         <h3>Tarifs Shiatsu</h3>
         <SmallSection>
-          <SmallTitle>Au cabinet</SmallTitle>
+          <SmallTitle>En cabinet</SmallTitle>
           <LinkContainer>
             Situé au{' '}
             <Link
