@@ -4,6 +4,7 @@ import Img from 'gatsby-image';
 import React from 'react';
 import Helmet from 'react-helmet';
 import { MdWarning } from 'react-icons/md';
+import { BaseLink } from '../components/base-link';
 import { BaseHead } from '../components/basehead';
 import { Content } from '../components/content';
 import { Header } from '../components/header/header';
@@ -99,21 +100,41 @@ export default ({ data, location }) => (
           alt="Marielle appuie ses mains sur le dos d'un homme allongé"
         />
       </ImgPortraitContainer>
+      <h3>Partenariats</h3>
+      <h4>Shiatsu et cours de Qi Gong</h4>
+      <ul>
+        <li>
+          <BaseLink href="https://institut-rafael.fr/">
+            Institut Rafaël
+          </BaseLink>{' '}
+          - Maison de l'après cancer
+        </li>
+        <li>
+          <BaseLink href="http://www.etincelle.asso.fr/">Étincelle</BaseLink> -
+          Rebondir avec un cancer
+        </li>
+      </ul>
       <h3>Formations</h3>
       <ul>
         <li>
-          Certifiée praticienne en Shiatsu traditionnel de l’école ZEN PLUS de
-          Gilles Valentin.
+          Certifiée praticienne en Shiatsu traditionnel de l’école{' '}
+          <BaseLink href="http://zen-plus.fr/">ZEN PLUS</BaseLink> de Gilles
+          Valentin.
         </li>
         <li>Stage d’été Shiatsu assis avec Bernard BOUHERET.</li>
         <li>
-          Certifiée formation professionnelle de Qi Gong de l’institut QUIMETAO,
-          Dr Jian Liujun, école agréée par la fédération Union Pro Qi Gong
+          Certifiée formation professionnelle de Qi Gong de{' '}
+          <BaseLink href="https://www.quimetao.fr/">
+            l’institut QUIMETAO
+          </BaseLink>
+          , Dr Jian Liujun, école agréée par la fédération Union Pro Qi Gong
           FEQGAE (2 ans).
         </li>
         <li>
-          Ecole ZHI ROU JIA, “l’école du développement de la douceur”, agréée
-          par la fédération Union Pro Qi Gong FEQGAE (3 ans).
+          Ecole{' '}
+          <BaseLink href="http://www.zhiroujia.com/">ZHI ROU JIA</BaseLink>,
+          “l’école du développement de la douceur”, agréée par la fédération
+          Union Pro Qi Gong FEQGAE (3 ans).
         </li>
         <li>
           Certificat de qualification professionnelle (CQP), Fédération Sport

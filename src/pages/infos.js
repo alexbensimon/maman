@@ -1,6 +1,7 @@
 import styled from '@emotion/styled';
 import React from 'react';
 import Helmet from 'react-helmet';
+import { BaseLink } from '../components/base-link';
 import { BaseHead } from '../components/basehead';
 import { Content } from '../components/content';
 import { Header } from '../components/header/header';
@@ -23,13 +24,13 @@ export default ({ location }) => (
         <h3>Contact</h3>
         <div>
           Prendre rendez-vous :{' '}
-          <Link href="tel:0623148896">06 23 14 88 96</Link>
+          <BaseLink href="tel:0623148896">06 23 14 88 96</BaseLink>
         </div>
         <div>
           Email :{' '}
-          <Link href="mailto:mariellebensimon@gmail.com">
+          <BaseLink href="mailto:mariellebensimon@gmail.com">
             mariellebensimon@gmail.com
-          </Link>
+          </BaseLink>
         </div>
       </BigSection>
       <BigSection>
@@ -38,13 +39,9 @@ export default ({ location }) => (
           <SmallTitle>En cabinet</SmallTitle>
           <LinkContainer>
             Situé au{' '}
-            <Link
-              href="https://goo.gl/maps/54CwiUKxRw6q5LDN6"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
+            <BaseLink href="https://goo.gl/maps/54CwiUKxRw6q5LDN6">
               1 Résidence Beausoleil, 92210 Saint-Cloud
-            </Link>
+            </BaseLink>
           </LinkContainer>
           <div>Durée de la séance : ~ 1 heure</div>
           <List>
@@ -82,12 +79,6 @@ const SmallTitle = styled.h4`
 `;
 
 const LinkContainer = styled.div`
-  margin-bottom: 15px;
-`;
-
-const Link = styled.a`
-  font-family: 'Roboto', sans-serif;
-  text-decoration: underline;
   margin-bottom: 15px;
 `;
 
