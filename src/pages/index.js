@@ -137,12 +137,19 @@ export default ({ data, location }) => (
           Union Pro Qi Gong FEQGAE (3 ans).
         </li>
         <li>
-          Certificat de qualification professionnelle (CQP), Fédération Sport
-          Pour Tous.
+          Certificat de qualification professionnelle (CQP),{' '}
+          <BaseLink href="https://www.sportspourtous.org/">
+            Fédération Sport Pour Tous
+          </BaseLink>
+          .
         </li>
         <li>
-          Ana PEROCCO, tutrice dans le cadre du CQP et enseignante Qi Gong et Do
-          In.
+          Ana PEROCCO, tutrice et enseignante Qi Gong et Do In formée par
+          l'école{' '}
+          <BaseLink href="https://www.tempsducorps.org/">
+            Temps du Corps
+          </BaseLink>
+          .
         </li>
         <li>
           Stages et cours hebdomadaires avec Véronique Viloing, enseignante Qi
