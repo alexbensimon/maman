@@ -45,8 +45,8 @@ export default ({ location }) => (
           </LinkContainer>
           <div>Durée de la séance : ~ 1 heure</div>
           <List>
-            <li>1 séance : 60 €</li>
-            <li>3 séances : 150 €</li>
+            <li>1 séance : 70 €</li>
+            <li>3 séances : 180 €</li>
           </List>
           <div>Enfant : 30 min - 35 €</div>
         </SmallSection>
