@@ -48,18 +48,17 @@ export default ({ location }) => (
             <li>1 séance : 70 €</li>
             <li>3 séances : 180 €</li>
           </List>
-          <div>Enfant : 30 min - 35 €</div>
+          <div>Enfant : 30 min - 50 €</div>
         </SmallSection>
 
         <SmallSection>
           <SmallTitle>À domicile</SmallTitle>
-          <div>1 séance : 70 €</div>
+          <div>1 séance : 90 €</div>
         </SmallSection>
 
         <SmallSection>
           <SmallTitle>En entreprise</SmallTitle>
-          <div>Durée de la séance : ~ 20 minutes</div>
-          <div>70 € / heure</div>
+          <div>100 € / heure</div>
         </SmallSection>
       </BigSection>
     </Content>
