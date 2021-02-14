@@ -43,12 +43,11 @@ export default ({ location }) => (
               1 Résidence Beausoleil, 92210 Saint-Cloud
             </BaseLink>
           </LinkContainer>
-          <div>Durée de la séance : ~ 1 heure</div>
           <List>
             <li>1 séance : 70 €</li>
             <li>3 séances : 180 €</li>
           </List>
-          <div>Enfant : 30 min - 50 €</div>
+          <div>Enfant : 50 €</div>
         </SmallSection>
 
         <SmallSection>
