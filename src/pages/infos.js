@@ -23,41 +23,38 @@ export default ({ location }) => (
       <BigSection>
         <h3>Contact</h3>
         <div>
-          Prendre rendez-vous :{' '}
-          <BaseLink href="tel:0623148896">06 23 14 88 96</BaseLink>
+          Téléphone : <BaseLink href="tel:0623148896">06 23 14 88 96</BaseLink>
         </div>
         <div>
-          Email :{' '}
+          E-mail :{' '}
           <BaseLink href="mailto:mariellebensimon@gmail.com">
             mariellebensimon@gmail.com
           </BaseLink>
         </div>
       </BigSection>
       <BigSection>
-        <h3>Tarifs Shiatsu</h3>
+        <h3>Prestations</h3>
         <SmallSection>
-          <SmallTitle>En cabinet</SmallTitle>
+          <SmallTitle>Shiatsu</SmallTitle>
           <LinkContainer>
-            Situé au{' '}
+            Cabinet situé au{' '}
             <BaseLink href="https://goo.gl/maps/54CwiUKxRw6q5LDN6">
               1 Résidence Beausoleil, 92210 Saint-Cloud
             </BaseLink>
+            .
           </LinkContainer>
           <List>
             <li>1 séance : 70 €</li>
             <li>3 séances : 180 €</li>
           </List>
-          <div>Enfant : 50 €</div>
         </SmallSection>
-
         <SmallSection>
-          <SmallTitle>À domicile</SmallTitle>
-          <div>1 séance : 90 €</div>
-        </SmallSection>
-
-        <SmallSection>
-          <SmallTitle>En entreprise</SmallTitle>
-          <div>100 € / heure</div>
+          <SmallTitle>Qi Gong</SmallTitle>
+          <div>Cours de 1h en visio le samedi à 10h30.</div>
+          <List>
+            <li>Tarif : 10 €</li>
+            <li>Cours d'essai gratuit</li>
+          </List>
         </SmallSection>
       </BigSection>
     </Content>

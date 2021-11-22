@@ -15,11 +15,6 @@ export const Sections = ({ pathname }) => (
         Shiatsu
       </Section>
     </Link>
-    <Link to={urls.entreprise}>
-      <Section pathname={pathname} section={urls.entreprise}>
-        En entreprise
-      </Section>
-    </Link>
     <Link to={urls.ateliers}>
       <Section pathname={pathname} section={urls.ateliers}>
         Ateliers
@@ -36,7 +31,6 @@ export const Sections = ({ pathname }) => (
 const urls = {
   index: '/',
   shiatsu: '/shiatsu/',
-  entreprise: '/entreprise/',
   ateliers: '/ateliers/',
   infos: '/infos/',
 };
