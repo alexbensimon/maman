@@ -50,10 +50,16 @@ export default ({ location }) => (
         </SmallSection>
         <SmallSection>
           <SmallTitle>Qi Gong</SmallTitle>
+          <TinyTitle>En visio</TinyTitle>
           <div>Cours de 1h en visio le samedi à 10h30.</div>
           <List>
             <li>Tarif : 10 €</li>
             <li>Cours d'essai gratuit</li>
+          </List>
+          <TinyTitle>En physique</TinyTitle>
+          <div>Cours le lundi de 19h45 à 21h00 à Boulogne-Billancourt.</div>
+          <List>
+            <li>30 cours : 480 €</li>
           </List>
         </SmallSection>
       </BigSection>
@@ -70,6 +76,11 @@ const SmallSection = styled.div`
 `;
 
 const SmallTitle = styled.h4`
+  margin-bottom: 10px;
+`;
+
+const TinyTitle = styled.h5`
+  margin-top: 0px;
   margin-bottom: 10px;
 `;
 

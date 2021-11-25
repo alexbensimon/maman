@@ -89,16 +89,16 @@ export default ({ data, location }) => (
         alt="Un homme assis a la main posée sur un homme allongé"
       />
       <p>
-        Mes pratiques du Qi Gong et du Do In depuis cinq ans, mise en éveil du
-        corps me permettent d’entretenir ma forme physique et psychique afin de
-        bien me préparer avant de donner une séance de Shiatsu. Grâce à ces
-        exercices de respiration profonde, mon corps se détend et le flots de
-        mes pensées diminue permettant une meilleure concentration avec une
-        présence ici et maintenant et un calme intérieur, atouts qui
-        enrichissent ma pratique du Shiatsu. Un travail centré sur l’attention
-        et l’intention bienveillante permet d’équilibrer les énergies dans le
-        corps et d’aider la personne qui reçoit le Shiatsu à entreprendre le
-        retour vers elle-même afin qu’elle trouve ses propres solutions.
+        Mes pratiques du Qi Gong et du Do In depuis 2014, mise en éveil du corps
+        me permettent d’entretenir ma forme physique et psychique afin de bien
+        me préparer avant de donner une séance de Shiatsu. Grâce à ces exercices
+        de respiration profonde, mon corps se détend et le flots de mes pensées
+        diminue permettant une meilleure concentration avec une présence ici et
+        maintenant et un calme intérieur, atouts qui enrichissent ma pratique du
+        Shiatsu. Un travail centré sur l’attention et l’intention bienveillante
+        permet d’équilibrer les énergies dans le corps et d’aider la personne
+        qui reçoit le Shiatsu à entreprendre le retour vers elle-même afin
+        qu’elle trouve ses propres solutions.
       </p>
       <p>
         Les séances n’ont en aucun cas de prétention médicale ou paramédicale.

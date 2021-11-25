@@ -26,7 +26,10 @@ export default ({ data, location }) => (
         fluid={data.file.childImageSharp.fluid}
         alt="Marielle assise dans un cercle de pierres"
       />
-      <h3>Do In et Qi Gong : Un esprit calme dans un corps détendu</h3>
+      <h3>
+        Do In, Qi Gong et relaxation sonore : Un esprit calme dans un corps
+        détendu
+      </h3>
       <p>
         Place aux techniques énergétiques avec un atelier par mois afin de
         partir à la découverte de ces pratiques de revitalisation et
@@ -35,7 +38,8 @@ export default ({ data, location }) => (
         les étirer pour faire circuler le Qi (l’énergie vitale ou le souffle).
         Il s'agit de s’offrir un moment de ressourcement pour prendre soin de
         soi et acquérir des méthodes simples et efficaces de préservation de la
-        santé et du bien-être.
+        santé et du bien-être. Pour poursuivre dans la détente, je vous propose
+        une relaxation sonore aux bols tibétains et gong.
       </p>
       <Quote>“Le repos est le maître du mouvement” — Lao Tseu</Quote>
       <Article
