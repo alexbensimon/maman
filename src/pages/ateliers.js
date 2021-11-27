@@ -23,7 +23,7 @@ export default ({ data, location }) => (
     <Content>
       <h2>Ateliers</h2>
       <Img
-        fluid={data.file.childImageSharp.fluid}
+        fluid={data.cerclePierres.childImageSharp.fluid}
         alt="Marielle assise dans un cercle de pierres"
       />
       <h3>
@@ -41,6 +41,10 @@ export default ({ data, location }) => (
         santé et du bien-être. Pour poursuivre dans la détente, je vous propose
         une relaxation sonore aux bols tibétains et gong.
       </p>
+      <Img
+        fluid={data.bolsGong.childImageSharp.fluid}
+        alt="Marielle assise dans un cercle de pierres"
+      />
       <Quote>“Le repos est le maître du mouvement” — Lao Tseu</Quote>
       <Article
         url="https://www.lemonde.fr/sante/article/2016/08/31/l-hopital-experimente-le-qi-gong-pour-soulager-des-effets-secondaires-du-cancer_4990653_1651302.html"
@@ -52,7 +56,14 @@ export default ({ data, location }) => (
 
 export const query = graphql`
   {
-    file(relativePath: { eq: "cercle-pierres.jpg" }) {
+    cerclePierres: file(relativePath: { eq: "cercle-pierres.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 680) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    bolsGong: file(relativePath: { eq: "bols-gong.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 680) {
           ...GatsbyImageSharpFluid
