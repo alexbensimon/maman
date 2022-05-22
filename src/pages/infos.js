@@ -48,7 +48,7 @@ export default ({ location }) => (
             <li>1 séance : 65 €</li>
             <li>3 séances : 180 €</li>
           </List>
-          <BaseLink href="https://local.google.com/place?id=7073596803530957015&use=srp&ved=1t%3A65428&hl=fr#fpstate=lie">
+          <BaseLink href="https://g.co/kgs/VvJW5q">
             <Flex>
               <MarginRight>Voir les avis Google</MarginRight>
               <FcGoogle />
