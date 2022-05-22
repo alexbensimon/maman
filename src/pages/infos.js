@@ -1,6 +1,7 @@
 import styled from '@emotion/styled';
 import React from 'react';
 import Helmet from 'react-helmet';
+import { FcGoogle } from 'react-icons/fc';
 import { BaseLink } from '../components/base-link';
 import { BaseHead } from '../components/basehead';
 import { Content } from '../components/content';
@@ -44,9 +45,15 @@ export default ({ location }) => (
             .
           </LinkContainer>
           <List>
-            <li>1 séance : 70 €</li>
+            <li>1 séance : 65 €</li>
             <li>3 séances : 180 €</li>
           </List>
+          <BaseLink href="https://www.google.fr/search?ved=1t:65428&hl=fr&q=Shiatsu+Saint-Cloud+-+Marielle+Tuil-Bensimon&ludocid=7073596803530957015&lsig=AB86z5UpmC0wtz1NGu_elXq0Msxu#fpstate=lie&lrd=0x47e67b81390e309f:0x622a76d0b6cd20d7,1,,,">
+            <Flex>
+              <MarginRight>Voir les avis Google</MarginRight>
+              <FcGoogle />
+            </Flex>
+          </BaseLink>
         </SmallSection>
         <SmallSection>
           <SmallTitle>Qi Gong</SmallTitle>
@@ -91,4 +98,13 @@ const LinkContainer = styled.div`
 const List = styled.ul`
   margin-top: 0;
   margin-bottom: 10px;
+`;
+
+const Flex = styled.span`
+  display: flex;
+  align-items: center;
+`;
+
+const MarginRight = styled.span`
+  margin-right: 5px;
 `;
