@@ -48,7 +48,7 @@ export default ({ location }) => (
             <li>1 séance : 65 €</li>
             <li>3 séances : 180 €</li>
           </List>
-          <BaseLink href="https://www.google.fr/search?ved=1t:65428&hl=fr&q=Shiatsu+Saint-Cloud+-+Marielle+Tuil-Bensimon&ludocid=7073596803530957015&lsig=AB86z5UpmC0wtz1NGu_elXq0Msxu#fpstate=lie&lrd=0x47e67b81390e309f:0x622a76d0b6cd20d7,1,,,">
+          <BaseLink href="https://local.google.com/place?id=7073596803530957015&use=srp&ved=1t%3A65428&hl=fr#fpstate=lie">
             <Flex>
               <MarginRight>Voir les avis Google</MarginRight>
               <FcGoogle />
