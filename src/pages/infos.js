@@ -57,7 +57,7 @@ export default ({ location }) => (
         </SmallSection>
         <SmallSection>
           <SmallTitle>Qi Gong</SmallTitle>
-          <div>Cours de 1h en visio le lundi à 19h30 et le samedi à 10h30.</div>
+          <div>Cours de 1h en visio le lundi à 19h30 et le samedi à 10h00.</div>
           <List>
             <li>Tarif : 10 €</li>
             <li>Cours d'essai gratuit</li>
