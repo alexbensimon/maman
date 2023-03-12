@@ -44,12 +44,17 @@ export default ({ data, location }) => (
       </p>
       <Img
         fluid={data.bolsGong.childImageSharp.fluid}
-        alt="Marielle assise dans un cercle de pierres"
+        alt="Marielle avec des bols et un gong"
       />
       <p />
       <Img
         fluid={data.coursGroupe.childImageSharp.fluid}
-        alt="Marielle assise dans un cercle de pierres"
+        alt="Marielle en train de donner un cours de Qi-Gong"
+      />
+      <p />
+      <Img
+        fluid={data.atelierAssise.childImageSharp.fluid}
+        alt="Marielle en train de donner un atelier"
       />
       <Quote>“Le repos est le maître du mouvement” — Lao Tseu</Quote>
       <Article
@@ -77,6 +82,13 @@ export const query = graphql`
       }
     }
     coursGroupe: file(relativePath: { eq: "cours-groupe.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 680) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    atelierAssise: file(relativePath: { eq: "atelier-assise.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 680) {
           ...GatsbyImageSharpFluid
