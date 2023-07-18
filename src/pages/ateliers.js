@@ -31,14 +31,14 @@ export default ({ data, location }) => (
         détendu
       </h3>
       <p>
-        Place aux techniques énergétiques avec un atelier par mois afin de
-        partir à la découverte de ces pratiques de revitalisation et
-        d’harmonisation pour libérer ses tensions et ressentir son corps. Nous
-        aborderons les méridiens selon les saisons, en apprenant à stimuler les
-        points d’acupuncture pour faire circuler le Qi (l’énergie vitale ou le
-        souffle). Il s'agit de s’offrir un moment de ressourcement pour prendre
-        soin de soi et acquérir des méthodes simples et efficaces de
-        préservation de la santé et du bien-être. Pour poursuivre dans la
+        Place aux techniques énergétiques avec un atelier (tous les 2 mois
+        environ) afin de partir à la découverte de ces pratiques de
+        revitalisation et d’harmonisation pour libérer ses tensions et ressentir
+        son corps. Nous aborderons les méridiens selon les saisons, en apprenant
+        à stimuler les points d’acupuncture pour faire circuler le Qi (l’énergie
+        vitale ou le souffle). Il s'agit de s’offrir un moment de ressourcement
+        pour prendre soin de soi et acquérir des méthodes simples et efficaces
+        de préservation de la santé et du bien-être. Pour poursuivre dans la
         détente, je vous propose une relaxation sonore aux bols tibétains et
         gong.
       </p>

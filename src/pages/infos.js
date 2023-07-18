@@ -45,8 +45,8 @@ export default ({ location }) => (
             .
           </LinkContainer>
           <List>
-            <li>1 séance : 65 €</li>
-            <li>3 séances : 180 €</li>
+            <li>1 séance : 70 €</li>
+            <li>3 séances : 195 €</li>
           </List>
           <BaseLink href="https://g.co/kgs/VvJW5q">
             <Flex>
@@ -61,6 +61,14 @@ export default ({ location }) => (
           <List>
             <li>Tarif : 35 € par mois, donne accès à tous les cours</li>
             <li>Cours d'essai gratuit</li>
+          </List>
+        </SmallSection>
+        <SmallSection>
+          <SmallTitle>Ateliers</SmallTitle>
+          <div>Groupe de 6 personnes maximum, en présentiel.</div>
+          <List>
+            <li>Durée : 3 heures</li>
+            <li>Tarif : 50 €</li>
           </List>
         </SmallSection>
       </BigSection>
