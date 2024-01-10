@@ -110,8 +110,10 @@ export default ({ data, location }) => (
           - Maison de l'après cancer
         </li>
         <li>
-          <BaseLink href="http://www.etincelle.asso.fr/">Étincelle</BaseLink> -
-          Rebondir avec un cancer
+          <BaseLink href="https://youtu.be/SyPV9vWDWVg?si=mpBu6Eg5VW-Km54h&t=179">
+            Étincelle
+          </BaseLink>{' '}
+          - Rebondir avec un cancer
         </li>
       </ul>
       <h3>Formations</h3>
