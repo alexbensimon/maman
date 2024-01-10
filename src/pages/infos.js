@@ -1,4 +1,6 @@
 import styled from '@emotion/styled';
+import { graphql } from 'gatsby';
+import Img from 'gatsby-image';
 import React from 'react';
 import Helmet from 'react-helmet';
 import { FcGoogle } from 'react-icons/fc';
@@ -8,7 +10,7 @@ import { Content } from '../components/content';
 import { Header } from '../components/header/header';
 import { Layout } from '../components/layout';
 
-export default ({ location }) => (
+export default ({ location, data }) => (
   <Layout>
     <BaseHead />
     <Helmet>
@@ -71,10 +73,28 @@ export default ({ location }) => (
             <li>Tarif : 50 €</li>
           </List>
         </SmallSection>
+        <ImgPortraitContainer>
+          <Img
+            fluid={data.shiatsuChild.childImageSharp.fluid}
+            alt="Portrait de Marielle"
+          />
+        </ImgPortraitContainer>
       </BigSection>
     </Content>
   </Layout>
 );
+
+export const query = graphql`
+  {
+    shiatsuChild: file(relativePath: { eq: "shiatsu-child.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 680) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+  }
+`;
 
 const BigSection = styled.div`
   margin-bottom: 50px;
@@ -104,4 +124,9 @@ const Flex = styled.span`
 
 const MarginRight = styled.span`
   margin-right: 5px;
+`;
+
+const ImgPortraitContainer = styled.div`
+  width: 70%;
+  margin: auto;
 `;
