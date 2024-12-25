@@ -48,7 +48,7 @@ export default ({ location, data }) => (
           </LinkContainer>
           <List>
             <li>1 séance : 75 €</li>
-            <li>3 séances : 195 €</li>
+            <li>3 séances : 210 €</li>
           </List>
           <BaseLink href="https://g.co/kgs/VvJW5q">
             <Flex>
@@ -61,7 +61,7 @@ export default ({ location, data }) => (
           <SmallTitle>Qi Gong</SmallTitle>
           <div>Cours de 1h en visio le lundi à 19h30 et le samedi à 10h00.</div>
           <List>
-            <li>Tarif : 35 € par mois, donne accès à tous les cours</li>
+            <li>Tarif : 37 € par mois, donne accès à tous les cours</li>
             <li>Cours d'essai gratuit</li>
           </List>
         </SmallSection>
