@@ -106,14 +106,12 @@ export default ({ data, location }) => (
         <li>
           <BaseLink href="https://institut-rafael.fr/">
             Institut Rafaël
-          </BaseLink>{' '}
-          - Maison de l'après cancer
+          </BaseLink> (2020-2025) - Maison de l'après cancer
         </li>
         <li>
           <BaseLink href="https://youtu.be/SyPV9vWDWVg?si=mpBu6Eg5VW-Km54h&t=179">
             Étincelle
-          </BaseLink>{' '}
-          - Rebondir avec un cancer
+          </BaseLink> (depuis 2020) - Rebondir avec un cancer
         </li>
       </ul>
       <h3>Formations</h3>

@@ -70,7 +70,7 @@ export default ({ location, data }) => (
           <div>Groupe de 6 personnes maximum, en présentiel.</div>
           <List>
             <li>Durée : 3 heures</li>
-            <li>Tarif : 40 €</li>
+            <li>Tarif : 45 €</li>
           </List>
         </SmallSection>
         <ImgPortraitContainer>
