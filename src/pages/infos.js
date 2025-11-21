@@ -47,8 +47,8 @@ export default ({ location, data }) => (
             .
           </LinkContainer>
           <List>
-            <li>1 séance : 75 €</li>
-            <li>3 séances : 195 €</li>
+            <li>1 séance : 80 €</li>
+            <li>3 séances : 210 €</li>
           </List>
           <BaseLink href="https://g.co/kgs/VvJW5q">
             <Flex>
