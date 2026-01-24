@@ -97,11 +97,10 @@ export default ({ location }) => (
         <h3>Article 5 – Fourniture des Prestations</h3>
         <p>
           La prestation commandée par le Client sera fournie selon les modalités
-          suivantes : consistant en une séance de shiatsu d'une durée variant
-          entre 30 minutes et une heure et demi selon le choix du Client, la
-          prestation pourra être effectuée au domicile du Client ou sur le lieu
-          d'exercice du professionnel. La date et l'horaire de la réalisation de
-          la prestation seront confirmés au Client, par téléphone ou par mail.
+          suivantes : consistant en une séance de shiatsu d'une durée d'environ
+          une heure, la prestation sera effectuée au cabinet du professionnel.
+          La date et l'horaire de la réalisation de la prestation seront
+          confirmés au Client, par téléphone ou par mail.
         </p>
         <p>
           Le Prestataire s'engage à effectuer sa prestation avec sérieux et
