@@ -1,6 +1,5 @@
 import styled from '@emotion/styled';
-import { graphql } from 'gatsby';
-import Img from 'gatsby-image';
+import { graphql, Link } from 'gatsby';
 import React from 'react';
 import Helmet from 'react-helmet';
 import { FcGoogle } from 'react-icons/fc';
@@ -25,6 +24,8 @@ export default ({ location, data }) => (
       <h2>Infos pratiques</h2>
       <BigSection>
         <h3>Contact</h3>
+        <div>Marielle Tuil-Bensimon EI</div>
+        <div>N° SIRET : 439 005 513 00031</div>
         <div>
           Téléphone : <BaseLink href="tel:0623148896">06 23 14 88 96</BaseLink>
         </div>
@@ -73,12 +74,30 @@ export default ({ location, data }) => (
             <li>Tarif : 45 €</li>
           </List>
         </SmallSection>
-        <ImgPortraitContainer>
-          <Img
-            fluid={data.shiatsuChild.childImageSharp.fluid}
-            alt="Portrait de Marielle"
-          />
-        </ImgPortraitContainer>
+        <SmallSection>
+          <div>Modes de paiement acceptés : chèque, virement, espèces.</div>
+          <div>Tous les prix sont TTC.</div>
+          <div>TVA non applicable, art. 293 B du CGI.</div>
+          <div>
+            Conformément aux articles L.616-1 et R.616-1 du code de la
+            consommation, mon entreprise individuelle a mis en place un
+            dispositif de médiation de la consommation. L'entité de médiation
+            retenue est : MEDIATION CONSOMMATION DÉVELOPPEMENT/MED CONSO DEV
+          </div>
+        </SmallSection>
+      </BigSection>
+      <BigSection>
+        <h3>Mentions légales</h3>
+        <SmallSection>
+          <SmallTitle>Hébergeur</SmallTitle>
+          <div>Netlify, Inc.</div>
+          <div>101 2nd Street</div>
+          <div>San Francisco, CA 94105, États-Unis</div>
+          <div>E-mail : support@netlify.com</div>
+        </SmallSection>
+        <SmallSection>
+          <StyledLink to="/cgv">Conditions générales de vente</StyledLink>
+        </SmallSection>
       </BigSection>
     </Content>
   </Layout>
@@ -126,7 +145,6 @@ const MarginRight = styled.span`
   margin-right: 5px;
 `;
 
-const ImgPortraitContainer = styled.div`
-  width: 70%;
-  margin: auto;
+const StyledLink = styled(Link)`
+  text-decoration: underline;
 `;

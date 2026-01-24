@@ -1,16 +1,14 @@
 import styled from '@emotion/styled';
-import { graphql, Link } from 'gatsby';
+import { graphql } from 'gatsby';
 import Img from 'gatsby-image';
 import React from 'react';
 import Helmet from 'react-helmet';
-import { MdWarning } from 'react-icons/md';
 import { BaseLink } from '../components/base-link';
 import { BaseHead } from '../components/basehead';
 import { Content } from '../components/content';
 import { Header } from '../components/header/header';
 import { Layout } from '../components/layout';
 import { Quote } from '../components/quote';
-import { colors } from '../utils/colors';
 
 export default ({ data, location }) => (
   <Layout>
@@ -26,14 +24,6 @@ export default ({ data, location }) => (
     </Helmet>
     <Header pathname={location.pathname} />
     <Content>
-      <Link to="/covid/">
-        <CovidBlock>
-          <MdWarning size="2em" />
-          <span>
-            Voir les mesures que je mets en place contre le&nbsp;COVID-19
-          </span>
-        </CovidBlock>
-      </Link>
       <h2>Présentation</h2>
       <Quote>
         “A force de sacrifier l’essentiel pour l’urgence, on finit par oublier
@@ -88,11 +78,11 @@ export default ({ data, location }) => (
       </p>
       <p>
         Le Shiatsu et le Do In sont deux méthodes de bien-être destinées à
-        prévenir la maladie, à maintenir et renforcer santé et équilibre. Do In
-        ou auto-shiatsu est une technique d’harmonisation et de revitalisation
-        qui se pratique par soi-même sur soi-même. Le Shiatsu se réalise sur les
-        autres et représente un extraordinaire moyen de contact et de
-        communication avec autrui.
+        maintenir et renforcer santé et équilibre. Do In ou auto-shiatsu est une
+        technique d’harmonisation et de revitalisation qui se pratique par
+        soi-même sur soi-même. Le Shiatsu se réalise sur les autres et
+        représente un extraordinaire moyen de contact et de communication avec
+        autrui.
       </p>
       <ImgPortraitContainer>
         <Img
@@ -106,12 +96,14 @@ export default ({ data, location }) => (
         <li>
           <BaseLink href="https://institut-rafael.fr/">
             Institut Rafaël
-          </BaseLink> (2020-2025) - Maison de l'après cancer
+          </BaseLink>{' '}
+          (2020-2025) - Maison de l'après cancer
         </li>
         <li>
           <BaseLink href="https://youtu.be/SyPV9vWDWVg?si=mpBu6Eg5VW-Km54h&t=179">
             Étincelle
-          </BaseLink> (depuis 2020) - Rebondir avec un cancer
+          </BaseLink>{' '}
+          (depuis 2020) - Rebondir avec un cancer
         </li>
       </ul>
       <h3>Formations</h3>
@@ -158,24 +150,15 @@ export default ({ data, location }) => (
         </li>
         <li>Stage méditation MBSR avec Véronique Viloing (1er cycle).</li>
       </ul>
+      <div style={{ width: '40%', margin: 'auto' }}>
+        <Img
+          fluid={data.logoPraticien.childImageSharp.fluid}
+          alt="Logo Praticien Shiatsu"
+        />
+      </div>
     </Content>
   </Layout>
 );
-
-const CovidBlock = styled.div`
-  border-radius: 20px;
-  background-color: ${colors.red};
-  color: ${colors.beige};
-  padding: 15px 30px;
-  text-align: center;
-  span {
-    display: block;
-    text-decoration: underline;
-  }
-  @media (max-width: 600px) {
-    margin-top: 20px;
-  }
-`;
 
 const ImgPortraitContainer = styled.div`
   width: 70%;
@@ -194,6 +177,13 @@ export const query = graphql`
     marielleShiatsuDos: file(relativePath: { eq: "marielle-shiatsu-dos.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 680) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    logoPraticien: file(relativePath: { eq: "logo-praticien-shiatsu.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 300) {
           ...GatsbyImageSharpFluid
         }
       }

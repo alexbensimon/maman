@@ -42,18 +42,17 @@ export default ({ data, location }) => (
         place rapidement. Il s’intègre dans tous les types de structures.
       </p>
       <p>
-        En début de séance, je vous demanderai les raisons de votre présence
-        (stress, digestif, fatigue, sommeil ou autres…), vos antécédents
-        médicaux, et de me préciser votre environnement de travail, familial ou
-        autres. Puis, dans un second temps, je vous inviterai à vous allonger
-        sur le ventre les bras le long du corps, puis j’exercerai des pressions
-        verticales précises, douces et profondes le plus souvent avec la pulpe
-        de mes pouces mais aussi avec les doigts, les paumes des mains, les
-        coudes, les avant-bras et les pieds sur l’ensemble de votre corps le
-        long des canaux par lesquels l’énergie circule, appelés méridiens, et
-        sur les points d’acupuncture. Au cours des séances j’utiliserai des
-        pressions, des techniques vibratoires, des étirements progressifs, des
-        réchauffements et des percussions.
+        En début de séance, je vous demanderai les raisons de votre présence,
+        vos antécédents médicaux, et de me préciser votre environnement de
+        travail, familial ou autres. Puis, dans un second temps, je vous
+        inviterai à vous allonger sur le ventre les bras le long du corps, puis
+        j’exercerai des pressions verticales précises, douces et profondes le
+        plus souvent avec la pulpe de mes pouces mais aussi avec les doigts, les
+        paumes des mains, les coudes, les avant-bras et les pieds sur l’ensemble
+        de votre corps le long des canaux par lesquels l’énergie circule,
+        appelés méridiens, et sur les points d’acupuncture. Au cours des séances
+        j’utiliserai des pressions, des techniques vibratoires, des étirements
+        progressifs, des réchauffements et des percussions.
       </p>
       <Img
         fluid={data.shiatsuMain.childImageSharp.fluid}
@@ -64,18 +63,17 @@ export default ({ data, location }) => (
         fois les tensions musculaires et les ressassements du mental. Il procure
         une détente et un bien-être profond et permet au corps de stimuler ses
         capacités naturelles d’auto-régulation. S’accorder une séance de Shiatsu
-        est un véritable allié contre le stress, la fatigue, et permet
-        d’améliorer le sommeil. Il est source d’apaisement et de vitalité, et il
-        vous aidera à prendre conscience de votre corps lors des dissolutions
-        des zones bloquées. Le Shiatsu est un toucher subtil qui permet de
-        libérer les tensions et d’équilibrer les émotions. Il peut soulager
-        aussi les douleurs du dos, des épaules ou des jambes.
+        peut être un véritable allié contre le stress, la fatigue, et peut
+        permettre d’améliorer le sommeil. Il est source d’apaisement et de
+        vitalité, et il vous aidera à prendre conscience de votre corps lors des
+        dissolutions des zones bloquées. Le Shiatsu est un toucher subtil qui
+        permet de libérer les tensions et d’équilibrer les émotions. Il peut
+        soulager aussi les douleurs du dos, des épaules ou des jambes.
       </p>
       <p>
         Le Shiatsu offre également une technique qui s’adresse à une zone
         fondamentale de notre corps, le ventre, il s’agit de l’Ampuku. Il permet
-        une détente profonde de l’organisme et une libération des tensions
-        telles que le stress, les troubles du sommeil et les maux de dos.
+        une détente profonde de l’organisme et une libération des tensions.
         J’inviterai la personne à s’allonger sur le dos, j’effectuerai une prise
         de contact en posant délicatement mes mains sur la zone du ventre, puis
         en exerçant des pressions progressives, des rotations, des vibrations je
@@ -84,10 +82,6 @@ export default ({ data, location }) => (
         émotions enfouies dont certaines sont cristallisées depuis longtemps,
         provoquant des désagréments physiques.
       </p>
-      <Img
-        fluid={data.ampuku.childImageSharp.fluid}
-        alt="Un homme assis a la main posée sur un homme allongé"
-      />
       <p>
         Mes pratiques du Qi Gong et du Do In depuis 2014, mise en éveil du corps
         me permettent d’entretenir ma forme physique et psychique afin de bien
@@ -118,13 +112,6 @@ export default ({ data, location }) => (
 export const query = graphql`
   {
     shiatsuMain: file(relativePath: { eq: "shiatsu-main.jpg" }) {
-      childImageSharp {
-        fluid(maxWidth: 680) {
-          ...GatsbyImageSharpFluid
-        }
-      }
-    }
-    ampuku: file(relativePath: { eq: "ampuku.png" }) {
       childImageSharp {
         fluid(maxWidth: 680) {
           ...GatsbyImageSharpFluid
